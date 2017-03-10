@@ -6,8 +6,17 @@ tags:
 - photography
 - sky
 - night
-featured-image: /images/pic05.jpg
-homepage-thumbnail: /images/pic26.jpg
+featured-image: "/images/pic05.jpg"
+homepage-thumbnail: "/images/pic26.jpg"
+test_field:
+- a_label_maybe: Ok what
+  a_sub_field:
+  - ''
+- a_label_maybe: Ok what is this label
+  a_sub_field:
+  - Oh wow so many hi
+  - Hi Again
+  - Hi
 ---
 
 **Project Description:** This is a sample project page. You can add more projects in the `_projects` directory of your Jekyll build. Be sure to include the proper [Front Matter](https://jekyllrb.com/docs/frontmatter/) for each of your projects, including your project's `title`, applicable `categories`, and a `featured-image`.
