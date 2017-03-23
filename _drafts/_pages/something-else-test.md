@@ -8,4 +8,10 @@ secondary_description: Etiam quis viverra lorem, in semper lorem. Sed nisl arcu 
   lorem ipsum et magna feugiat veroeros aliquam. Lorem ipsum dolor sit amet nullam
   dolore.
 date: '2017-03-23T13:06:26+00:00'
+speakers:
+- description: He's alright
+  bio: 'A man of many talents, Bob Bobson is best known for his hit book "Being Bob
+    Bobson: A Bob Bobson Story"'
+  name: Bob Bobson
 ---
+This is some text about the SE Conference
