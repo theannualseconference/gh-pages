@@ -1,13 +1,14 @@
 ---
 name: Johanna Mair
 pic: "/images/notfound.png"
-short_bio: | 
+short_bio: |-
   Professor of Organization, Strategy and Leadership
   Hertie School of Governance, Germany
 
   Hewlett Foundation Visiting Scholar
   Academic Editor Stanford Social Innovation Review
   Stanford Center on Philanthropy and Civil Society
+date: '2017-03-23T19:48:02.420+00:00'
 ---
 Johanna Mair is a Professor of Organization, Strategy and Leadership at the Hertie School of Governance. She serves as the Academic Editor of the Stanford Social Innovation Review and is a Scholar at the Stanford Center on Philanthropy and Civil Society. 
 

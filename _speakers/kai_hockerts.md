@@ -1,9 +1,10 @@
 ---
 name: Dr. Kai Hockerts
 pic: "/images/notfound.png"
-short_bio: | 
+short_bio: |-
   Professor in Social Entrepreneurship
   Copenhagenn Business School
+date: '2017-03-23T19:48:02.420+00:00'
 ---
 Kai Hockerts is Professor in Social Entrepreneurship at Copenhagen Business School (CBS). In his function as Academic Director of Responsible Management Education he is also leading the CBS curriculum change initiative currently reviews all 17 study programs with the goal of anchoring responsible management education across the curriculum.
 

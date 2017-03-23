@@ -1,10 +1,11 @@
 ---
 name: Dr. Kumar Nair
 pic: "/images/notfound.png"
-short_bio: | 
+short_bio: |-
   Director and Dean
   LM Thapar School of Management
   Thapar University
+date: '2017-03-23T19:48:02.420+00:00'
 ---
 Dr. Nair, Dean and Director of LM Thapar School of Management, is an accomplished researcher, teacher and management consultant. He specializes in Organizational Leadership, Social Entrepreneurship and Nanotechnology with more than 50 publications in journals of international repute to his credit. In the last twenty five years he has been cited more than 1800 times in academic journals with a Google Scholar H-factor of 24. Dr. Nair has worked both in academia and industry and has a combined experience of more than 30 years in various industries such as oil & gas (Shell in Amsterdam), education (Denmark, US, Japan, NL, China), consulting (PwC, Japan, UK and US) and advanced R&D (NL, Japan and US). Dr. Nair holds a US and a world patent in the area of converting natural gas into useful petrochemicals.
 
