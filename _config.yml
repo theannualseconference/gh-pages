@@ -1,14 +1,7 @@
-# Welcome to Jekyll!
-#
-# This config file is meant for settings that affect your whole blog, values
-# which you are expected to set up once and rarely need to edit after that.
-# For technical reasons, this file is *NOT* reloaded automatically when you use
-# 'jekyll serve'. If you change this file, please restart the server process.
-
 # Site settings
-title: Phantom
+title: Wow
 email: youremailaddress@gmail.com
-description: The Jekyll version of the Phantom theme by HTML5 UP.
+description: Some description
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site
 
@@ -23,9 +16,12 @@ home-link-in-menu: yes
 
 # Collections
 collections:
-  projects:
+  years:
     output: true
-    permalink: /projects/:path/
+    permalink: /:title
+  speakers:
+    output: true
+    permalink: /speakers/:path/
 
 # Defaults
 defaults:
@@ -45,9 +41,17 @@ defaults:
       featured-image: ""
   - scope:
       path: ""
-      type: projects
+      type: years
     values:
-      layout: project
+      layout: years
       tags: []
       featured-image: ""
       homepage-thumbnail: ""
+  - scope:
+      path: ""
+      type: speakers
+    values:
+      layout: speakers
+      name: Example Name
+      short_bio: A little bio
+      pic: /images/pic04.jpg

@@ -1,9 +1,9 @@
-<nav id="menu">
-	<h2>Menu</h2>
-	<ul>
-
-		{% for navitem in site.data.menu | sort: 'priority' %}
-		<li><a href="{{ navitem.url | prepend: site.baseurl }}">{{ navitem.title }}</a></li>
-		{% endfor %}
-	</ul>
-</nav>
+<nav class="bt bb bg-white tc center mt0 fixed w-100 z-999">
+  {% for navitem in site.data.menu | sort: 'priority' %}
+  
+    <a href="{{ navitem.url | prepend: site.baseurl }}"
+      class="f6 f5-l link black-80 hover-color-0 underline-hover dib pa3 ph4-l"   
+    > {{ navitem.title }} </a>
+    
+  {% endfor %}
+ </nav>

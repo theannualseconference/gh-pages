@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+{% include head.html %}
+  <body>
+    {% include menu.html %}
+    
+    <!-- Custom page style -->
+    <style>
+      {% for c in page.colors %}
+        .bg-{{forloop.index0}}    { background-color: {{c}} !important; }
+        .color-{{forloop.index0}} { color: {{c}} !important; }
+        .hover-bg-{{forloop.index0}}:hover { background-color: {{c}} !important; }
+        .hover-color-{{forloop.index0}}:hover { color: {{c}} !important; }
+      {% endfor %}
+    </style>
+    
+    <!-- Main Image -->
+    <section class="vh-100 dt w-100 tc cover" style="background:url({{ site.baseurl }}{{ page.featured-image }}) no-repeat center;">
+      <div class="dtc v-mid">
+        <h1 class="f1 f-headline-l fw1 i white-60">The 15th Annual Social Entreprenuership Conference</h1>
+        <div class="ph0 mh0 measure f4 lh-copy center">
+          <span>March 1st, 2015</span> • <span>Boston, MA</span>
+        </div>
+        <div>
+          <!-- Should prob be display table cells for even width -->
+          <a class="f6 f5-l ba link black-80 hover-lightest-blue dib pa3 ph4-l"> Call for Papers </a>
+          <a class="f6 f5-l ba link black-80 hover-lightest-blue dib pa3 ph4-l"> Register Now</a>
+        </div>
+      </div>
+    </section>
+
+
+    <section class="bg-washed-green">
+      <div class="center ph7 pv5 f3">
+        <h1 class="fw3 pb4 f1 tc avenir">The subtitle for the project</h1>
+        <p class="lh-copy fw3 f4-ns black-70">
+          The memories came to him, how he felt then. "It was very pure, if I can say it right," he'd explain later. "It was pure in 1984 … I was still dreaming." During the Olympics, he was deep in negotiations with Nike for his first shoe contract. He traded pins with other athletes. Eight years later, when he was the most famous person in the world and the Dream Team was forced to stay outside the Olympic Village, he'd be disappointed when that separation kept him from swapping pins again.
+        </p>
+      </div>
+    </section>
+
+    
+    {{ content }} 
+    
+    {% include footer.html %}
+  </body>
+</html>
