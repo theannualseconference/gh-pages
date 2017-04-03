@@ -25,7 +25,16 @@
   font-family: 'Nunito', sans-serif;
 }
 
+.strong, strong {
+  font-weight: bold;
+}
+
+.cover__exterior {
+  min-height: 400px;
+}
+
 .cover__interior {
+  min-height: 400px;
   position: absolute;
   top: 0;
   left: 0;
@@ -36,5 +45,45 @@
 
 .cover__interior--overlay {
   z-index: 0;
-  background-image: linear-gradient(45deg, rgba(226, 60, 99, 0.4), rgba(145, 58, 252, 0.4), rgba(16, 11, 192, 0.4));
+  background-image: linear-gradient(
+    45deg, 
+    rgba(87, 6, 140, 0.4), 
+    rgba(16, 11, 192, 0.4)
+  );
 }
+
+
+.grounded-radiants {
+  position: relative;
+  border: 8px solid transparent;
+  border-radius: 2px;
+  background: white;
+  background-clip: padding-box;
+  padding: 0;
+  width: 214px;
+  margin: 0;
+  display: inline-block;
+}
+
+.grounded-radiants::after {
+  position: absolute;
+  top: -8px;
+  bottom: -8px;
+  left: -8px;
+  right: -8px;
+  background: linear-gradient(to bottom left, #3acfd5 0%, #3a4ed5 100%);
+  content: '';
+  z-index: -1;
+  border-radius: 2px;
+}
+
+img.inner {
+  filter: grayscale(1);
+  display: block;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+} 
+
+// rgba(226, 60, 99, 0.4),     rgba(145, 58, 252, 0.4),  original
+// rgba(87, 6, 140, 0.4)

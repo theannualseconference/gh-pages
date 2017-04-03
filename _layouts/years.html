@@ -15,40 +15,69 @@
     </style>
     
     <!-- Main Image -->
-    <section class="vh-100 w-100  white-90  cover" style="background:url({{ site.baseurl }}{{ page.featured-image }}) no-repeat center;">
+    <section class="cover__exterior vh-100 w-100  white-90  cover" style="background:url({{ site.baseurl }}{{ page.featured-image }}) no-repeat center;">
 
       <div class="cover__interior cover__interior--overlay"></div>
       <div class="cover__interior dt tc">
         <div class="dtc v-mid pv4">
           <h1 class="f1 fw1 white-90">
-            The 15th Annual <br/>
-            Social Entreprenuership <br/>
-             Conference
+            {{ page.title }}
+        
           </h1>
           <div class="ph0 mh0 measure f2 lh-copy center ">
             <span>March 1st, 2015</span> • <span>Boston, MA</span>
           </div>
           <div class="f4 fw2 flex tc items-center justify-center">
-            <!-- Should prob be display table cells for even width -->
-            <a class="ba bw2 pointer link ttu br1 hover-bg-lightest-blue dib ph5 pv3 mh3"> Call for Papers </a>
-            <a class="ba bw2 pointer link ttu br1 hover-bg-lightest-blue dib ph5 pv3 mh3"> Register Now</a>
+            <a class="ba bw2 pointer link ttu br1 hover-bg-white-30 dib ph5 pv3 mh3"> Call for Papers </a>
+            <a class="ba bw2 pointer link ttu br1 hover-bg-white-30 dib ph5 pv3 mh3"> Register Now</a>
           </div>
         </div>
-      </div> <!-- Content -->
+      </div> 
     </section>
 
-
+    <!-- Content -->
     <section class="bg-washed-green">
-      <div class="center ph7 pv5 f3">
-        <h1 class="fw3 pb4 f1 tc avenir">The subtitle for the project</h1>
+      <div class="center measure-wide pv5 f3">
+        <h1 class="fw3 pb2 f1 tc">About The Conference</h1>
+        <div class="lh-copy fw3 f4-ns black-70">
+          {{ content }} 
+        </div>
+      </div>
+    </section>
+    
+    <!-- Call for speakers -->
+    {% if page.call_for_speakers.active %}
+    <section class="">
+      <div class="center measure-wide pv5 f3">
+        <h1 class="fw3 pb2 f1 tc avenir">Call For Speakers</h1>
+        <div class="lh-copy fw3 f4-ns black-70">
+          {{ page.call_for_speakers.content | markdownify }}
+        </div>
+      </div>
+    </section>
+    {% endif %}
+
+    <!-- Call for speakers -->
+    {% if page.speakers.active %}
+    <section class="speakers">
+      <div class="measure-wide pv5 f3">
+        <div class="grounded-radiants">
+          <img class="worst" src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/392/redwood-ukulele-top.jpg" alt="ukulele" />
+        </div>
+      </div>
+    </section>
+
+    {% endif %}
+
+    <!-- Something else -->
+    <section class="">
+      <div class="center measure-wide pv5 f3">
+        <h1 class="fw3 pb2 f1 tc avenir">The subtitle for the project</h1>
         <p class="lh-copy fw3 f4-ns black-70">
           The memories came to him, how he felt then. "It was very pure, if I can say it right," he'd explain later. "It was pure in 1984 … I was still dreaming." During the Olympics, he was deep in negotiations with Nike for his first shoe contract. He traded pins with other athletes. Eight years later, when he was the most famous person in the world and the Dream Team was forced to stay outside the Olympic Village, he'd be disappointed when that separation kept him from swapping pins again.
         </p>
       </div>
     </section>
-
-    
-    {{ content }} 
     
     {% include footer.html %}
   </body>

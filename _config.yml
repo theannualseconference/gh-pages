@@ -22,6 +22,8 @@ collections:
   speakers:
     output: true
     permalink: /speakers/:path/
+  sections:
+    output: false
 
 # Defaults
 defaults:
@@ -44,9 +46,23 @@ defaults:
       type: years
     values:
       layout: years
-      tags: []
+      title: "The Annual SE Conference 201X"
+      registration: false
+      call-for-speakers: true
+      main-color: "#444"
+      gradient-colors: []
       featured-image: ""
-      homepage-thumbnail: ""
+      sections: []
+      speakers: []
+      speaker-section-index: 0
+  - scope:
+      path: ""
+      type: sections
+    values:
+      layout: sections
+      title: "Section Title"
+      background: ""
+      tabs: []
   - scope:
       path: ""
       type: speakers
