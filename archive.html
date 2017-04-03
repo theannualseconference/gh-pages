@@ -1,0 +1,22 @@
+---
+title: All Years
+layout: page
+---
+
+<section class="tiles">
+
+{% for year in site.years %}
+  <article class="style{{ forloop.index }}">
+    <span class="image">
+      <img src="{{ site.url }}{{ site.baseurl }}/{{ year.featured-image }}" alt="" />
+    </span>
+    <a href="{{ year.url | prepend:site.baseurl | prepend:site.url }}">
+      <h2>{{ year.title }}</h2>
+      <div class="content">
+        <p>{{ year.content | truncate: 200 }}</p>
+      </div>
+    </a>
+  </article>
+{% endfor %}
+
+</section>
