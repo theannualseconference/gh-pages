@@ -1,6 +1,6 @@
 ---
 name: Noah Isserman
-pic: "/images/notfound.png"
+pic: "/uploads/Noah_Isserman.jpg"
 short_bio: "Assistant Professor of Business Administration and Social Work (visiting)
   \nUniversity of Illinois"
 date: '2017-03-23T19:48:02.420+00:00'

@@ -1,0 +1,30 @@
+{% comment %} 
+Alright this is pretty funky.
+Check out http://hamishwillee.github.io/2014/11/13/jekyll-includes-are-functions/
+{% endcomment %} 
+
+{% for sect in site.sections %} {% if sect.path == include.page %}
+
+<div style="background: {{sect.background or "white"}};">
+  <div class="center measure-wide pv4 f3">
+    <h1 class="fw3 pb2 f1 tc">{{ sect.title }}</h1>
+    <div class="section-flex-container black-70 ">
+      {% if sect.left %}
+        <sidebar class="section-flex__side f5 w-25-l w-25-m mr3">{{ sect.left | markdownify }}</sidebar>
+      {% endif %}
+
+      <article class="section-flex__center lh-copy fw3 f4 ">
+        {{ sect.content | markdownify }}
+      </article>
+      
+      {% if sect.right %}
+        <sidebar class="section-flex__side f5 w-25-l w-25-m ml3">{{ sect.right | markdownify }}</sidebar>
+      {% endif %}
+    </div>
+  </div>
+<div>
+
+
+
+
+{% endif %}{% endfor %}

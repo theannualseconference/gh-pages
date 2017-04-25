@@ -1,6 +1,6 @@
 ---
 name: Dr. Jeffery S. McMullen
-pic: "/images/notfound.png"
+pic: "/uploads/mcmullen.jpg"
 short_bio: |-
   Associate Professor of Entrepreneurship
   Kelley School of Business

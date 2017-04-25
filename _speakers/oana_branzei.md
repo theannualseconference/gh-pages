@@ -1,6 +1,6 @@
 ---
 name: Oana Branzei
-pic: "/images/notfound.png"
+pic: "/uploads/branzei.jpg"
 short_bio: |-
   Associate Professor, General Management
   Director, Sustainability Certificate Program

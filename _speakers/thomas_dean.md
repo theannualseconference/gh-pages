@@ -1,6 +1,6 @@
 ---
 name: Thomas Dean
-pic: "/images/notfound.png"
+pic: "/uploads/dean.jpg"
 short_bio: |-
   Professor, Management
   US Bank Faculty Fellow

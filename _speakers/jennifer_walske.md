@@ -1,6 +1,6 @@
 ---
 name: Dr. Jennifer Walske
-pic: "/images/notfound.png"
+pic: "/uploads/walkse.jpg"
 short_bio: |-
   Assistant Professor and Program Director
   Conscious Leadership and Social Innovation Program

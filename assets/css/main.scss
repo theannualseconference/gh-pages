@@ -4,6 +4,10 @@
 @charset "utf-8";
 @import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,700,900');
 
+.hidden:not(.active) {
+  display: none;
+}
+
 .fancy-strike {
   position: relative;
   display: inline-block;
@@ -31,41 +35,85 @@
 
 .cover__exterior {
   min-height: 400px;
+  height: 93vh;
 }
 
 .cover__interior {
   min-height: 400px;
   position: absolute;
-  top: 0;
+  // top: 0;
   left: 0;
   width: 100%;
-  height: 100%;
+  height: 93vh;
   overflow: hidden;
 }
 
-.cover__interior--overlay {
-  z-index: 0;
-  background-image: linear-gradient(
-    45deg, 
-    rgba(87, 6, 140, 0.4), 
-    rgba(16, 11, 192, 0.4)
-  );
+
+// .cover__interior--overlay {
+//   z-index: 0;
+//   background-image: linear-gradient(
+//     45deg, 
+//     rgba(87, 6, 140, 0.4), 
+//     rgba(16, 11, 192, 0.4)
+//   );
+// }
+
+
+sidebar {
+  h1, h2, h3, h4, h5, h6 {
+    margin-bottom: 0.5em;
+  }
+}
+
+.section-flex-container {
+  display: flex;
+  justify-content: space-around;
+  flex-direction: row;
+}
+
+.section-flex__center {
+  flex: 1;
+}
+
+.section-flex__side {
+  // flex-basis: 25%;
+}
+
+.hover-b--inherit:hover {
+  border-color: inherit;
 }
 
 
-.grounded-radiants {
+.speaker-container-container {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.speaker-container {
+  min-width: 150px;
+  cursor: pointer;
+  &:hover .img-container__img,
+  &.active .img-container__img {
+    filter: none;
+  }
+}
+
+
+.img-container {
   position: relative;
   border: 8px solid transparent;
   border-radius: 2px;
-  background: white;
+  // background: white;
   background-clip: padding-box;
-  padding: 0;
-  width: 214px;
-  margin: 0;
-  display: inline-block;
+  // padding: 0;
+  // width: 214px;
+  // margin: 0;
+  // display: inline-block;
 }
 
-.grounded-radiants::after {
+.img-container::after {
   position: absolute;
   top: -8px;
   bottom: -8px;
@@ -77,12 +125,15 @@
   border-radius: 2px;
 }
 
-img.inner {
+.img-container__img {
   filter: grayscale(1);
   display: block;
   margin: 0;
+  border-radius: 2px;
+  // height: 250px;
   padding: 0;
-  width: 100%;
+  // object-fit: cover;
+  // width: 100%;
 } 
 
 // rgba(226, 60, 99, 0.4),     rgba(145, 58, 252, 0.4),  original

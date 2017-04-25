@@ -2,9 +2,14 @@
 <html>
 {% include head.html %}
   <body class="nunito">
-    {% include menu.html %}
+    
     
     <!-- Custom page style -->
+    {% capture linear-gradient %}
+      {% for c in page.colors %}{{c}}{% unless forloop.last %},{% endunless %}
+      {% endfor %}
+    {% endcapture %}
+            
     <style>
       {% for c in page.colors %}
         .bg-{{forloop.index0}}    { background-color: {{c}} !important; }
@@ -12,31 +17,65 @@
         .hover-bg-{{forloop.index0}}:hover { background-color: {{c}} !important; }
         .hover-color-{{forloop.index0}}:hover { color: {{c}} !important; }
       {% endfor %}
+
+      .b--gradient {
+        border-image-source: linear-gradient(
+          45deg, 
+          {{linear-gradient}}
+        );
+        border-image-slice: 1;
+      }
+
+      .cover__interior--overlay {
+          z-index: 0;
+          opacity: {{page.filter-opacity}};
+          background-image: linear-gradient(
+            45deg, 
+            {{linear-gradient}}
+          );
+        }
+
+        .img-container::after {
+          background: linear-gradient(
+            to bottom left, 
+            {{linear-gradient}}
+          );
+        }
     </style>
     
     <!-- Main Image -->
-    <section class="cover__exterior vh-100 w-100  white-90  cover" style="background:url({{ site.baseurl }}{{ page.featured-image }}) no-repeat center;">
+    <section class="cover__exterior w-100 white-90 cover" style="background:url({{ site.baseurl }}{{ page.featured-image }}) no-repeat center;">
 
       <div class="cover__interior cover__interior--overlay"></div>
       <div class="cover__interior dt tc">
         <div class="dtc v-mid pv4">
-          <h1 class="f1 fw1 white-90">
+          <h1 class="f1 fw1 white-90" style="margin: auto; max-width: 14em;">
             {{ page.title }}
         
           </h1>
           <div class="ph0 mh0 measure f2 lh-copy center ">
-            <span>March 1st, 2015</span> • <span>Boston, MA</span>
+            <span>{{page.conf_date}}</span> • <span>{{page.location}}</span>
           </div>
-          <div class="f4 fw2 flex tc items-center justify-center">
+          <div class="f4 fw2 flex tc items-center flex-wrap justify-center">
             <a class="ba bw2 pointer link ttu br1 hover-bg-white-30 dib ph5 pv3 mh3"> Call for Papers </a>
             <a class="ba bw2 pointer link ttu br1 hover-bg-white-30 dib ph5 pv3 mh3"> Register Now</a>
           </div>
         </div>
       </div> 
     </section>
+    <nav class="bt bb bg-0 tc pv1 center mt0 w-100">
+      {% for navitem in site.data.menu %}
+      
+        <a href="{{ navitem.url | prepend: site.baseurl }}"
+          class="f6 link ttu black-90 ba b--transparent hover-b--inherit dib pa3 ph4-l"   
+        > {{ navitem.title }} </a>
+        
+      {% endfor %}
+    </nav>
+
 
     <!-- Content -->
-    <section class="bg-washed-green">
+    <section class="">
       <div class="center measure-wide pv5 f3">
         <h1 class="fw3 pb2 f1 tc">About The Conference</h1>
         <div class="lh-copy fw3 f4-ns black-70">
@@ -44,41 +83,36 @@
         </div>
       </div>
     </section>
-    
-    <!-- Call for speakers -->
-    {% if page.call_for_speakers.active %}
-    <section class="">
-      <div class="center measure-wide pv5 f3">
-        <h1 class="fw3 pb2 f1 tc avenir">Call For Speakers</h1>
-        <div class="lh-copy fw3 f4-ns black-70">
-          {{ page.call_for_speakers.content | markdownify }}
+
+    {% for section in page.sections %}
+
+      <!--  Speakers -->
+      {% if forloop.index0 == page.speaker-section-index %}
+      <section id="speakers" class="speakers">
+        <div class="center measure-wide pt4 f3">
+          <h1 class="fw3 pb2 f1 tc">Speakers</h1>
         </div>
-      </div>
-    </section>
-    {% endif %}
-
-    <!-- Call for speakers -->
-    {% if page.speakers.active %}
-    <section class="speakers">
-      <div class="measure-wide pv5 f3">
-        <div class="grounded-radiants">
-          <img class="worst" src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/392/redwood-ukulele-top.jpg" alt="ukulele" />
+        <div class="speaker-container-container pb4">
+          {% for speaker in page.speakers %}
+            {% include import-speaker.html page=speaker.page pic=true id=speaker.id active=forloop.first %}
+          {% endfor %}
         </div>
-      </div>
-    </section>
+        <div>
+          {% for speaker in page.speakers %}
+            {% include import-speaker.html page=speaker.page bio=true id=speaker.id active=forloop.first %}
+          {% endfor %}
+        </div>
+      </section>
+      {% endif %}
 
-    {% endif %}
+      <!-- Sections -->
+      <section id="{{section.id}}" class="bt bw3 b--gradient">
+        {% include import-section.html page=section.page %}
+      </section>
+    {% endfor %}
 
-    <!-- Something else -->
-    <section class="">
-      <div class="center measure-wide pv5 f3">
-        <h1 class="fw3 pb2 f1 tc avenir">The subtitle for the project</h1>
-        <p class="lh-copy fw3 f4-ns black-70">
-          The memories came to him, how he felt then. "It was very pure, if I can say it right," he'd explain later. "It was pure in 1984 … I was still dreaming." During the Olympics, he was deep in negotiations with Nike for his first shoe contract. He traded pins with other athletes. Eight years later, when he was the most famous person in the world and the Dream Team was forced to stay outside the Olympic Village, he'd be disappointed when that separation kept him from swapping pins again.
-        </p>
-      </div>
-    </section>
-    
+
+
     {% include footer.html %}
   </body>
 </html>

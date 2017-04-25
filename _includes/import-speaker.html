@@ -1,0 +1,51 @@
+{% comment %} 
+Similar to sections
+
+include.id
+include.active
+include.bio
+include.pic
+
+<article class="fl w-100 w-50-m w-20-ns pa2-ns">
+    <div class="aspect-ratio aspect-ratio--1x1">
+      <img style="background-image:url({{speaker.pic}});" class="db bg-center cover aspect-ratio--object" />
+    </div>
+    <a href="#0" class="ph2 ph0-ns pb3 link db">
+      <h3 class="f5 f4-ns mb0 black-90">{{speaker.name}}</h3>
+      <h3 class="f6 f5 fw4 mt2 black-60">{{speaker.short_bio}}</h3>
+    </a>
+</article>
+{% endcomment %} 
+
+
+{% for speaker in site.speakers %} {% if speaker.path == include.page %}
+
+{% if include.pic %}
+  <article class="br2 dark-gray mv4 mh2 mw5 speaker-container" data-tab="{{include.id}}">
+    <div class="img-container">
+      <div class="aspect-ratio aspect-ratio--1x1">
+        <div style="background-image:url({{speaker.pic}});" class="db bg-center cover aspect-ratio--object img-container__img" ></div>
+      </div>
+    </div>
+
+    <div class="ph2 ph0-ns pb3 link db">
+      <h3 class="f5 f4-ns mb0 black-90">{{speaker.name}}</h3>
+      <h3 class="f6 f5 fw4 mt2 black-60">{{speaker.short_bio}}</h3>
+    </div>
+    
+  </article>
+
+
+{% endif %}
+
+{% if include.bio %}
+  <article id="{{include.id}}" class="hidden {% if include.active %}active{% endif %}">
+    {{speaker.content | markdownify}}
+  </article>
+
+{% endif %}
+
+{% endif %}{% endfor %}
+
+
+

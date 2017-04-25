@@ -1,6 +1,6 @@
 ---
 name: Johanna Mair
-pic: "/images/notfound.png"
+pic: "/uploads/Mair-Johanna.jpg"
 short_bio: |-
   Professor of Organization, Strategy and Leadership
   Hertie School of Governance, Germany
