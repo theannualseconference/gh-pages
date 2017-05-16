@@ -1,6 +1,7 @@
 ---
 title: Registration
 subtitle: Registration closes October 1st, 2015
+date: '2017-05-16T18:01:00.590+00:00'
 ---
 <div class="row">
 <div class="col-md-4">
