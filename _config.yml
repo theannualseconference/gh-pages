@@ -10,6 +10,9 @@ logo-placeholder: images/logo.svg
 
 # Build settings
 markdown: kramdown
+sass:
+  sass_dir: assets/css
+  style: compressed
 
 # Layout settings
 home-link-in-menu: yes
@@ -17,6 +20,9 @@ home-link-in-menu: yes
 # Collections
 collections:
   years:
+    output: true
+    permalink: /:title
+  years2:
     output: true
     permalink: /:title
   speakers:
@@ -57,12 +63,27 @@ defaults:
       speaker-section-index: 0
   - scope:
       path: ""
+      type: years2
+    values:
+      layout: years2
+      featured-image: ""
+      title: "The Annual SE Conference 201X"
+      registration: "coming soon"
+      past: false
+      registrationOptions: []
+      main-color: "#444"
+      gradient-colors: []
+      panels: []
+  - scope:
+      path: ""
       type: sections
     values:
       layout: sections
       title: "Section Title"
       background: ""
       tabs: []
+      isSpeakers: false
+      speakers: []
   - scope:
       path: ""
       type: speakers

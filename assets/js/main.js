@@ -23,7 +23,7 @@ function scrollTo(hash) {
   }, 0);
 }
 
-$(document).ready(function() {  
+$(function() {  
   let hash = location.hash.slice(2);
   let hashActive = $(`[data-tab='${hash}']`)[0]
 
