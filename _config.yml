@@ -17,6 +17,7 @@ sass:
 # Layout settings
 home-link-in-menu: yes
 
+
 # Collections
 collections:
   years:

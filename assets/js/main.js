@@ -123,12 +123,12 @@ $(function() {
 
 
 
-  $('.cover__masonry').masonry({
-    // options
-    itemSelector: '.brick',
-    columnWidth: '.brick',
-    percentPosition: true
-  });
+  // $('.masonry').masonry({
+  //   // options
+  //   itemSelector: '.brick',
+  //   columnWidth: '.brick',
+  //   percentPosition: true
+  // });
 
   // $('.cover__masonry').hide();
 

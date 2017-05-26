@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 {% include head.html %}
-  <body class="nunito debug-">
+  <body class="nunito debug- cover" style="background:url({{ site.baseurl }}{{ page.featured-image }}) no-repeat center fixed;">
     
     <!-- Custom page style -->
     {% capture linear-gradient %}
@@ -34,10 +34,10 @@
       .cover__interior--overlay {
           z-index: 0;
           opacity: {{page.filter-opacity}};
-          background-image: linear-gradient(
+         /* background-image: linear-gradient(
             45deg, 
             {{linear-gradient}}
-          );
+          ); */
         }
 
         .img-container::after {
@@ -60,7 +60,7 @@
     </nav> -->
 
     <!-- Main Image -->
-    <section id="intro" class="cover__exterior w-100 white-90 cover" style="background:url({{ site.baseurl }}{{ page.featured-image }}) no-repeat center;">
+    <section id="intro" class="cover__exterior w-100 white-90 " >
 
       <div class="cover__interior cover__interior--overlay"></div>
       <div class="cover__interior dt tc">
@@ -118,17 +118,25 @@
     {% include footer.html %}
 
     <div id="myModal" class="modal">
-      <div class="modal-content cf">
+      <div class="modal-content cf br2">
         <span class="close fr m2 black-90 pointer mh2">&times;</span>
-        <div class="reg-links">
+        <div class="reg-links flex justify-center mv3">
          {% for reg in page.registrationOptions %}
-            <article class="hide-child relative ba b--black-20 mw5 center">
-              <div class="pa2 ba b--black-60">
-                <h1 class="f4 fw3 db lh-title">{{ reg.target }}</h1>
-                <h3 class="f6 mv1">{{ reg.price }}</h3>
-                <a class="link tc ph3 pv1 db bg-animate bg-dark-blue hover-bg-blue white f6 br1" href="{{ reg.link }}">Register</a>
-              </div>
-            </article>
+
+          <div class="bw1 mh2 ba b--dashe hover-b--darkblue b--black-20 flex db-l flex-column items-center justify-around no-underline ph3 br2 mh0 w-100 w-25-ns mb3 darkblue">
+            <div class="link darkblue">
+              <h3 class="f2 fw4 mt2 mt3-ns mb2 black-50 hover-darkblue">{{ reg.target }}</h3>
+              <h2 class="fw5 f1 mv4">
+                <sup class="pr0 f4">$</sup> 
+                {{reg.price}}
+              </h2>
+            </div>
+
+            <a class="link f3 fw3 pv3 ph4 br2 fw5 bb bw1 link pointer mt2 mb4 dib bg-dark-gradient dim white b--darkblue" href="{{ reg.link }}">
+              Register Now
+            </a>
+          </div>
+
           {% endfor %}
         </div>
       </div>

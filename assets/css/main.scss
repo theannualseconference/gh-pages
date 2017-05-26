@@ -7,7 +7,7 @@
 @import "tachyons_debug";
 
 html, body { margin: 0; height: 100%; }
-
+// * { box-sizing: border-box; }
   
 @mixin extends($list...) {
   @each $type in $list {
@@ -31,6 +31,15 @@ html, body { margin: 0; height: 100%; }
   }
 }
 
+
+.bg-dark-gradient {
+  background-image: linear-gradient(
+    45deg, 
+    #492c2d,
+    #9d5f61
+  );
+  
+}
 
 .intro-shadow {
   text-shadow: 2px 2px 2px #191919;
@@ -64,9 +73,19 @@ html, body { margin: 0; height: 100%; }
 }
 
 
+.img-wrapper {
+  // needs height and width
+  overflow: hidden;
+  img {
+    vertical-align: middle;
+    min-height: 100%;
+    width: 100%;
+  }
+}
+
 .panel {
   min-height: 100vh;
-  background-color: white;
+  background-color: #f4f2f0;
 
   @include small {
     padding-right: 1rem;
@@ -132,6 +151,14 @@ html, body { margin: 0; height: 100%; }
     @include extends(b--black-90);
   }
 
+  .panel-dark &:hover {
+    @include extends(b--white-90);
+  }
+
+  .panel-dark &.active {
+    @include extends(b--white-90);
+  }
+
 
 }
 
@@ -157,8 +184,18 @@ html, body { margin: 0; height: 100%; }
   width: 12rem;
 }
 
+.indent-p {
+  p:first-of-type {
+    text-indent: 1em;
+  }
+}
+
 .section-content {
   @include extends(lh-copy, fw3, f4);
+
+  a {
+    color: #bb7c7d;
+  }
 }
 
 .hidden:not(.active) {
@@ -240,6 +277,13 @@ sidebar {
 
 .hover-b--inherit:hover {
   border-color: inherit;
+}
+
+.panel-dark {
+  background-color: #492c2d;
+  color: #f4f2f0;
+
+
 }
 
 
@@ -331,19 +375,20 @@ sidebar {
   width: 100%;
 }
 
-.cover__masonry {
+.masonry {
   // transition: all .5s ease-in-out;
   // position: absolute !important;
   // height: 100% !important;
-  line-height: 0;
+  // margin-right: -10rem;
+  line-height: 3rem;
   // width: 100%;
-  // column-gap: 0;
-  // column-fill: initial;
-  // column-count: 3;
+  column-gap: 1rem;
+  column-fill: initial;
+  column-count: 2;
   .brick {
     margin: 0;
-    width: 33%;
-    // margin: 0 auto;
+    width: 100%; // 30%; // with 3% margins
+    border-radius: 2px;
   }
   .brick img {
     // transition: all .5s ease-in-out;

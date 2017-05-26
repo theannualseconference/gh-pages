@@ -3,33 +3,14 @@ Alright this is pretty funky.
 Check out http://hamishwillee.github.io/2014/11/13/jekyll-includes-are-functions/
 {% endcomment %} 
 
+
 {% for sect in site.sections %} {% if sect.path == include.page %}
 
   {% if sect.speakers.size > 0 %}
 
     <!-- Speaker situation -->
-    <div class="speaker-section-wrapper">
-      <div class="cover-cover__masonry">
-        <div class=" cover__masonry">
-          {% for speaker in sect.speakers %}{% for page in site.speakers %} 
-          {% if speaker.type != "title" and page.path == speaker.speaker_page %}
-
-            <div class="brick"><img src="{{ page.pic }}" class="" /></div>
-
-          {% endif %}
-          {% endfor %}{% endfor %}
-
-          {% for speaker in sect.speakers %}{% for page in site.speakers %} 
-          {% if speaker.type != "title" and page.path == speaker.speaker_page %}
-
-            <div class="brick"><img src="{{ page.pic }}" class="" /></div>
-
-          {% endif %}
-          {% endfor %}{% endfor %}
-
-        </div>
-      </div>
-      <section id="{{sect.id}}" class="section-container">
+    <div class="">
+      <section id="{{sect.id}}" class="section-container mw100-ns">
 
         <div class="section-flex-container section-flex-container__speaker">
           <sidebar class="section-flex__side w-30-ns w-100 mr3">
@@ -40,7 +21,7 @@ Check out http://hamishwillee.github.io/2014/11/13/jekyll-includes-are-functions
                 {% if speaker.type == "title" %} <div class="section-title mt6 section-title__speaker_subtitle" >{{ speaker.name }} </div> {% else %}
 
                 <div class="speaker-name f3 lh-title mv3"> 
-                  <span data-tab="{{ speaker.name | slugify }}" class="tab-title  {% if forloop.first %} active {% endif %}">{{ speaker.name }} </span>
+                  <span data-tab="{{ speaker.name | slugify }}" class="tab-title ">{{ speaker.name }} </span>
                 </div> 
 
                 {% endif %}
@@ -50,30 +31,45 @@ Check out http://hamishwillee.github.io/2014/11/13/jekyll-includes-are-functions
 
           <article class="section-flex__center section-flex-center__speaker">
             <div class="tab-contents tab-contents__speaker" >
+                <div id="{{sect.id}}-speaker-pics" class="speaker-pics tab-contents__default-tab hidden active">
+                  <div class="masonry">
+                    {% for speaker in sect.speakers %}{% for page in site.speakers %} 
+                    {% if speaker.type != "title" and page.path == speaker.speaker_page %}
+
+                      <div class="brick"><img src="{{ page.pic }}" class="" /></div>
+
+                    {% endif %}
+                    {% endfor %}{% endfor %}
+                  </div>
+                </div>
+
                 {% for speaker in sect.speakers %} 
-                                <div id="{{ speaker.name | slugify }}" class="section-content__speaker hidden {% if forloop.first %} active {% endif %}"> 
-
+                <div id="{{ speaker.name | slugify }}" class="section-content__speaker hidden"> 
                   {% for page in site.speakers %} {% if speaker.type != "title" and page.path == speaker.speaker_page %}
-                      <div class="dt w-100 bb b--black-05 pb2">
-                        <div class="w4_5 dtc v-top">
-                          <img src="{{ page.pic }}" class="ba b--black-10 db br2 ">
-                        </div>
-                        <div class="dtc v-top pl3">
-                          <h1 class="f4 lh-title mv0">{{ speaker.name }}</h1>
-                          <div class="pv2 pb3-ns f5 lh-copy measure mt2 mid-gray">
-                              <!-- <img src="{{ page.pic }}" class="ba b--black-10 db br2 "> -->
 
-                              {{ page.short_bio | markdownify }}
+                  <!-- <div class="dt w-100 bb b--black-05 pb2"> -->
+     <!--                <div class="w4_5 dtc v-top "> 
+                      <div class="img-wrapper" style="width: 12rem; height: 12rem;"> <img src="{{ page.pic }}" class="ba b--black-10 db br2 "> </div>
+                    </div> -->
+                    <!-- <div class="dtc v-top pl3"> -->
+                      <!-- <div class="pv2 pb3-ns f5 lh-copy measure mt2 mid-gray"> -->
+                      <div class="dt w-100">
+                          <div class="dtc w4_5 v-btm">
+                            <div class="img-wrapper fl mr3 mb2" style="width: 12rem; height: 12rem;"> <img src="{{ page.pic }}" class="ba b--black-10 db br2 "> </div>
                           </div>
-                        </div>
-                        
+                          <div class="dtc v-btm">
+                            <h1 class="f3 lh-title mv0">{{ speaker.name }}</h1>
+                            <div class="f5 white-80">{{ page.short_bio | markdownify }}</div>
+                          </div>
                       </div>
+                      <!-- </div> -->
+                    <!-- </div>   -->
+                  <!-- </div> -->
 
+                  <div class="section-content indent-p" style="font-size: 1.15rem"> {{ page.content | markdownify }} </div>
 
-                      <div class="section-content f5 black-80"> {{ page.content | markdownify }} </div>
-                 {% endif %}{% endfor %}
-                                 </div> 
-
+                  {% endif %}{% endfor %}
+                </div> 
                 {% endfor %}
 
             </div>

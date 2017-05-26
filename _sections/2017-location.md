@@ -36,7 +36,8 @@ left:
     120 Forsyth St  
     Boston, MA 02115
 
-    [Campus Map](http://example.com)
+    [Campus Map](http://www.northeastern.edu/campusmap/map/)
+    ![Small campus map](uploads/campus-map.jpg)
 ---
 #### Hotel Accommodations
 
