@@ -15,7 +15,7 @@ html, body { margin: 0; height: 100%; }
   }
 }
 
-.registration-link__open {
+.reg-links {
 
 }
 
@@ -28,6 +28,12 @@ html, body { margin: 0; height: 100%; }
 @mixin small {
   @media screen and (max-width: 30em) {
     @content;
+  }
+}
+
+.reg-links {
+  @include small {
+    flex-direction: column;
   }
 }
 
