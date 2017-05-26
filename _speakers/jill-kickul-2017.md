@@ -1,10 +1,8 @@
 ---
 layout: speakers
 name: Dr. Jill Kickul
-short_bio: |-
-  Professor, Lloyd Greif Center for Entrepreneurial Studies  
-  Research Director, Brittingham Social Enterprise Lab  
-  University of Southern California
+short_bio: "Professor, Lloyd Greif Center for Entrepreneurial Studies  \nResearch
+  Director, Brittingham Social Enterprise Lab  \nUniversity of Southern California"
 pic: "/uploads/Jill_2.jpeg"
 title: Jill Kickul 2017
 date: '2017-05-16T15:20:27+00:00'
