@@ -1,9 +1,7 @@
 ---
 layout: speakers
 name: Dr. Sophie Bacq
-short_bio: |-
-  Social Enterprise Institute  
-  Northeastern University  
+short_bio: "Social Enterprise Institute  \nNortheastern University  "
 pic: "/uploads/Bacq-1.JPG"
 title: Sophie Bacq 2017
 date: '2017-05-16T15:19:06+00:00'
