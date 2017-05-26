@@ -1,10 +1,8 @@
 ---
 layout: speakers
 name: Dr. Tyler Wry
-short_bio: |-
-  Assistant Professor of Entrepreneurship  
-  Wharton School  
-  University of Pennsylvania
+short_bio: "Assistant Professor of Entrepreneurship  \nWharton School  \nUniversity
+  of Pennsylvania"
 pic: "/uploads/Wry.jpeg"
 title: Dr. Tyler Wr
 date: '2017-05-16T14:59:34+00:00'

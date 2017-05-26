@@ -30,13 +30,8 @@ tabs:
 date: '2017-05-16T16:00:51+00:00'
 left:
   title: Address
-  content: |-
-    Northeastern University  
-    Egan Research Center  
-    120 Forsyth St  
-    Boston, MA 02115
-
-    [Campus Map](http://example.com)
+  content: "Northeastern University  \nEgan Research Center  \n120 Forsyth St  \nBoston,
+    MA 02115\n\n[Campus Map](http://example.com)"
 ---
 #### Hotel Accommodations
 
