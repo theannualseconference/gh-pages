@@ -10,5 +10,11 @@ speakers:
   name: Dr. Alex Nicholls
 - speaker_page: _speakers/dr-leif-petersen.md
   name: Dr. Leif Peterson
+- name: Sponsors and Directors
+  type: title
+- name: Dr Sophie Bacq
+  speaker_page: _speakers/sophie-bacq-2017.md
+- name: Dr. Jill Kickul
+  speaker_page: _speakers/jill-kickul-2017.md
 ---
 This is the default text that gets shown when nothing is selected

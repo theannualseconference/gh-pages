@@ -2,8 +2,8 @@
 layout: speakers
 name: Dr. Julie Battilana
 short_bio: |-
-  Professor of Business Administration, Harvard Business School\
-  Alan L. Gleitsman Professor of Social Innovation, Harvard Kennedy School\
+  Professor of Business Administration, Harvard Business School  
+  Alan L. Gleitsman Professor of Social Innovation, Harvard Kennedy School  
   Harvard University
 pic: "/uploads/battilana-julie.jpg"
 title: Dr. Julie Battilana

@@ -1,0 +1,116 @@
+{% comment %} 
+Alright this is pretty funky.
+Check out http://hamishwillee.github.io/2014/11/13/jekyll-includes-are-functions/
+{% endcomment %} 
+
+{% for sect in site.sections %} {% if sect.path == include.page %}
+
+  {% if sect.speakers.size > 0 %}
+
+    <!-- Speaker situation -->
+    <div class="speaker-section-wrapper">
+      <div class="cover-cover__masonry">
+        <div class=" cover__masonry">
+          {% for speaker in sect.speakers %}{% for page in site.speakers %} 
+          {% if speaker.type != "title" and page.path == speaker.speaker_page %}
+
+            <div class="brick"><img src="{{ page.pic }}" class="" /></div>
+
+          {% endif %}
+          {% endfor %}{% endfor %}
+
+          {% for speaker in sect.speakers %}{% for page in site.speakers %} 
+          {% if speaker.type != "title" and page.path == speaker.speaker_page %}
+
+            <div class="brick"><img src="{{ page.pic }}" class="" /></div>
+
+          {% endif %}
+          {% endfor %}{% endfor %}
+
+        </div>
+      </div>
+      <section id="{{sect.id}}" class="section-container">
+
+        <div class="section-flex-container section-flex-container__speaker">
+          <sidebar class="section-flex__side w-30-ns w-100 mr3">
+            <div class="tab-titles tab-titles__speaker">
+              <div class="section-title section-title__speaker">{{ include.title }}</div>
+
+              {% for speaker in sect.speakers %} 
+                {% if speaker.type == "title" %} <div class="section-title mt6 section-title__speaker_subtitle" >{{ speaker.name }} </div> {% else %}
+
+                <div class="speaker-name f3 lh-title mv3"> 
+                  <span data-tab="{{ speaker.name | slugify }}" class="tab-title  {% if forloop.first %} active {% endif %}">{{ speaker.name }} </span>
+                </div> 
+
+                {% endif %}
+              {% endfor %}
+            </div>
+          </sidebar>
+
+          <article class="section-flex__center section-flex-center__speaker">
+            <div class="tab-contents tab-contents__speaker" >
+                {% for speaker in sect.speakers %} 
+                                <div id="{{ speaker.name | slugify }}" class="section-content__speaker hidden {% if forloop.first %} active {% endif %}"> 
+
+                  {% for page in site.speakers %} {% if speaker.type != "title" and page.path == speaker.speaker_page %}
+                      <div class="dt w-100 bb b--black-05 pb2">
+                        <div class="w4_5 dtc v-top">
+                          <img src="{{ page.pic }}" class="ba b--black-10 db br2 ">
+                        </div>
+                        <div class="dtc v-top pl3">
+                          <h1 class="f4 lh-title mv0">{{ speaker.name }}</h1>
+                          <div class="pv2 pb3-ns f5 lh-copy measure mt2 mid-gray">
+                              <!-- <img src="{{ page.pic }}" class="ba b--black-10 db br2 "> -->
+
+                              {{ page.short_bio | markdownify }}
+                          </div>
+                        </div>
+                        
+                      </div>
+
+
+                      <div class="section-content f5 black-80"> {{ page.content | markdownify }} </div>
+                 {% endif %}{% endfor %}
+                                 </div> 
+
+                {% endfor %}
+
+            </div>
+          </article>
+        </div>
+      </section>
+    </div>
+  {% else %}
+  <section id="{{sect.id}}" class="section-container">
+
+    <div class="section-flex-container">
+      {% if sect.left %}
+        <sidebar class="section-flex__side w-30-ns w-100 mr3">
+          <div class="section-title">{{ sect.left.title }}</div>
+          <div class="section-content">{{ sect.left.content | markdownify }}</div>
+        </sidebar>
+      {% endif %}
+
+      <article class="section-flex__center">
+        {% if sect.tabs.size > 0 %}
+          <div class="tab-titles">
+            <div data-tab="{{ include.title | slugify }}" class="section-title tab-title di pointer active">{{ include.title }}</div>
+            {% for tab in sect.tabs %} <div data-tab="{{ tab.title | slugify }}" class="section-title tab-title di pointer"> {{ tab.title }} </div> {% endfor %}
+          </div>
+          <div class="tab-contents">
+            <div id="{{ include.title | slugify }}" class="section-content hidden active">{{ sect.content | markdownify }}</div>
+            {% for tab in sect.tabs %} <div id="{{ tab.title | slugify }}" class="section-content hidden"> {{ tab.content | markdownify }} </div> {% endfor %}
+          </div>
+        {% else %}
+          <div class="section-title">{{ include.title }}</div>
+          <div class="section-content">{{ sect.content | markdownify }}</div>
+        {% endif %}
+      </article>
+    </div>
+  </section>
+
+  {% endif %}
+
+
+{% endif %}{% endfor %}

@@ -3,10 +3,10 @@ layout: sections
 title: 2017 Location
 background: ''
 tabs:
-- tab-content: |-
+- content: |-
     **Parking and Directions** Parking is available at the Renaissance Garage (#62 on the campus map), 835 Columbus Avenue. Directions to the parking garage are listed below.
 
-    **From the noCrth (via Route I-93 or Route 1)**
+    **From the north (via Route I-93 or Route 1)**
 
     Take the Storrow Drive exit, and proceed to the Fenway exit. Follow signs for Boylston Street inbound, and bear right onto Westland Avenue. Turn right onto Massachusetts Avenue, proceed to the third traffic light, and turn right onto Columbus Avenue. The Renaissance Parking Garage is at 835 Columbus Avenue.
 
@@ -26,17 +26,14 @@ tabs:
 
     -   Take the MBTA Green Line (E train) to the Northeastern University stop, cross Huntington Avenue, enter Northeastern's campus. Egan Research Center is #60 on the campus map.
     -   Take the MBTA Orange Line to the Ruggles T Station, enter into Northeastern University campus on Forsyth Street. Egan Research Center is #60 on the campus map.
-  tab-title: How to get here
-isSpeakers: false
-speakers: []
+  title: How to get here
 date: '2017-05-16T16:00:51+00:00'
-sidebar-left:
-  enabled: true
+left:
   title: Address
   content: |-
-    Northeastern University\
-    Egan Research Center\
-    120 Forsyth St\
+    Northeastern University  
+    Egan Research Center  
+    120 Forsyth St  
     Boston, MA 02115
 
     [Campus Map](http://example.com)
@@ -44,13 +41,8 @@ sidebar-left:
 #### Hotel Accommodations
 
 Rooms for this conference are available:
-
-- either at The Colonnade Hotel for $275/night (+ tax). Please make your reservation through this link:
-
-<https://gc.synxis.com/rez.aspx?Hotel=27205&Chain=10237&template=fBOSCO&shell=fBOSCO2&start=availresults&arrive=10/31/2017&depart=11/3/2017&adult=1&child=0&group=SOE31A>
-- or at The Sheraton Boston Hotel for $249/night (+ tax). Please make your reservation through this link:
-
-<https://www.starwoodmeeting.com/Book/SEC17>
+  - The Colonnade Hotel for $275/night (+ tax). Please make your reservation through [this link](https://gc.synxis.com/rez.aspx?Hotel=27205&Chain=10237&template=fBOSCO&shell=fBOSCO2&start=availresults&arrive=10/31/2017&depart=11/3/2017&adult=1&child=0&group=SOE31A).
+  - The Sheraton Boston Hotel for $249/night (+ tax). Please make your reservation through [this link](https://www.starwoodmeeting.com/Book/SEC17).
 
 #### Other Travel Accommodations
 
