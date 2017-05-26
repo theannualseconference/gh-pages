@@ -38,6 +38,7 @@ left:
 
     [Campus Map](http://www.northeastern.edu/campusmap/map/)
     ![Small campus map](uploads/campus-map.jpg)
+
 ---
 #### Hotel Accommodations
 
