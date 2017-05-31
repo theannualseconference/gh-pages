@@ -11,7 +11,7 @@ speakers:
 - speaker_page: _speakers/dr-leif-petersen.md
   name: Dr. Leif Peterson
 - name: Dr. Andrew Charman
-  speaker_page: undefined
+  speaker_page: _speakers/dr-andrew-charman.md
 - name: Sponsors and Directors
   type: title
 - name: Dr Sophie Bacq
@@ -19,4 +19,4 @@ speakers:
 - name: Dr. Jill Kickul
   speaker_page: _speakers/jill-kickul-2017.md
 ---
-This is the default text that gets shown when nothing is selected
+Speakers 
