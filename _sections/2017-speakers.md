@@ -10,6 +10,8 @@ speakers:
   name: Dr. Alex Nicholls
 - speaker_page: _speakers/dr-leif-petersen.md
   name: Dr. Leif Peterson
+- name: Dr. Andrew Charman
+  speaker_page: undefined
 - name: Sponsors and Directors
   type: title
 - name: Dr Sophie Bacq
