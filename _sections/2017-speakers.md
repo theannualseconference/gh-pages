@@ -4,14 +4,14 @@ date: '2017-05-16T15:05:37+00:00'
 speakers:
 - speaker_page: _speakers/dr-julie-battilana.md
   name: Dr. Julie Battilana
-- speaker_page: _speakers/dr-tyler-wr.md
-  name: Dr. Tyler Wr
+- name: Dr. Andrew Charman
+  speaker_page: _speakers/dr-andrew-charman.md
 - speaker_page: _speakers/dr-alex-nicholls.md
   name: Dr. Alex Nicholls
 - speaker_page: _speakers/dr-leif-petersen.md
   name: Dr. Leif Peterson
-- name: Dr. Andrew Charman
-  speaker_page: _speakers/dr-andrew-charman.md
+- speaker_page: _speakers/dr-tyler-wr.md
+  name: Dr. Tyler Wry
 - name: Sponsors and Directors
   type: title
 - name: Dr Sophie Bacq
