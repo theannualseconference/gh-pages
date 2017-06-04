@@ -1,9 +1,12 @@
 ---
 layout: speakers
 name: Dr. Sophie Bacq
-short_bio: "Assistant Professor of Entrepreneurship & Innovation  \n[Social Enterprise Institute](https://www.northeastern.edu/sei/){:target=\"_blank\"}  \nD’Amore-McKim School of Business  \nNortheastern University"
+short_bio: "Assistant Professor of Entrepreneurship & Innovation  \n[Social Enterprise
+  Institute](https://www.northeastern.edu/sei/){:target=\"_blank\"}  \nD’Amore-McKim
+  School of Business  \nNortheastern University"
 pic: "/uploads/Bacq-1.JPG"
 title: Sophie Bacq 2017
+date: '2017-06-04T19:19:50.565+00:00'
 ---
 Sophie is an Assistant Professor of Entrepreneurship & Innovation at Northeastern University in Boston, where she teaches social entrepreneurship and microfinance at the undergraduate and graduate levels. Sophie joined Northeastern in 2012 after two years spent as a visiting scholar at New York University Stern School of Business. She holds a doctorate in Economic and Management Sciences from Université catholique de Louvain (Belgium), where she also received her Master’s and Bachelor’s degrees in Business Engineering.
  

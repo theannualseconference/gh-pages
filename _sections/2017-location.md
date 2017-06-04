@@ -30,9 +30,9 @@ tabs:
 date: '2017-05-16T16:00:51+00:00'
 left:
   title: Address
-  content: "Northeastern University  \nEgan Research Center  \nRaytheon Amphitheater  \n120 Forsyth Street  \nBoston,
-    MA 02115  \n\n[Campus Map](http://www.northeastern.edu/campusmap/map/){:target=\"_blank\"}  \n![Smallcampus
-    map](uploads/campus-map.jpg)"
+  content: "Northeastern University  \nEgan Research Center  \nRaytheon Amphitheater
+    \ \n120 Forsyth Street  \nBoston, MA 02115  \n\n[Campus Map](http://www.northeastern.edu/campusmap/map/){:target=\"_blank\"}
+    \ \n![Smallcampus map](uploads/campus-map.jpg)"
 ---
 #### Hotel Accommodations
 
