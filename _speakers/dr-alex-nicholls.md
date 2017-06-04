@@ -1,7 +1,8 @@
 ---
 layout: speakers
 name: Dr. Alex Nicholls
-short_bio: "Professor of Social Entrepreneurship  \nSaid Business School  \nUniversity of Oxford"
+short_bio: "Professor of Social Entrepreneurship  \nSaid Business School  \nUniversity
+  of Oxford"
 pic: "/uploads/Nicholls Alex.jpg"
 title: Dr. Alex Nicholls
 date: '2017-05-16T14:57:13+00:00'
