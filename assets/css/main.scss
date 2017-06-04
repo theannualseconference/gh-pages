@@ -112,11 +112,13 @@ html, body { margin: 0; height: 100%; }
 }
 
 .logo-container {
-  // @include extends(lh-copy, fw3, f4);
-
   max-height: 480px;
-  max-width: 640px;
+  width: 640px;
   margin: auto;
+
+  @include small {
+    width: 360px;
+  }
 }
 
 #logo {
