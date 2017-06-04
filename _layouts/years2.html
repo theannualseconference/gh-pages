@@ -99,7 +99,7 @@
 
     <!-- Content -->
     {% for panel in page.panels %}
-      <div id="{{panel.id}}"  class="panel {{panel.class}}" style="background: {{ panel.background }};">
+      <div id="panel-{{panel.id}}"  class="panel {{panel.class}}" style="background: {{ panel.background }};">
         {% if forloop.first %}
           <section class="section-container">
             <div class="section-title">About The Conference</div>

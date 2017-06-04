@@ -14,7 +14,7 @@ speakers:
   name: Dr. Tyler Wry
 - name: Sponsors and Directors
   type: title
-- name: Dr Sophie Bacq
+- name: Dr. Sophie Bacq
   speaker_page: _speakers/sophie-bacq-2017.md
 - name: Dr. Jill Kickul
   speaker_page: _speakers/jill-kickul-2017.md

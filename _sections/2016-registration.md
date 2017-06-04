@@ -1,5 +1,5 @@
 ---
-title: Registration and Key Dates
+title: 2016 Registration and Key Dates
 right: "#### Information\nWe will start at 9:00 AM on Friday, November 11, 2016, and
   will finish at 8:00 PM on Saturday, November 12, 2016.\n\n#### Key Dates\nSubmission
   deadline: <br>\n__Sep. 1, 2016__ <br>\nAcceptance notification: <br>\n__Sep. 15,

@@ -1,5 +1,5 @@
 ---
-title: Submission Details
+title: 2015 Submission Details
 date: '2017-05-16T18:01:00.590+00:00'
 ---
 Authors who wish to present their papers at the conference should submit electronically a three-page abstract (double-spaced, times new roman font, size 12) by Tuesday September 1st, 2015 to the conference co-Directors Dr. Jill Kickul, Director of Social Entrepreneurship Programs at NYU Stern and Dr. Sophie Bacq, Assistant Professor of Entrepreneurship & Innovation at Northeastern University at this address: jkickul@stern.nyu.edu.

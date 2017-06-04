@@ -1,16 +1,14 @@
 ---
 layout: sections
-title: 'Call For Speakers '
-background: ''
+title: '2017 Call For Speakers'
 tabs:
 - title: Submission Details
   content: |-
-    Authors who wish to present their papers at the conference should submit electronically a three-page abstract (double-spaced, times new roman font, size 12) by Friday, __September 1st, 2017__ to the conference co-Directors Dr. Jill Kickul, Professor of Clinical Entrepreneurship at University of Southern California and Dr. Sophie Bacq, Assistant Professor of Social Entrepreneurship at Northeastern University at this address: [s.bacq@northeastern.edu](mailto:s.bacq@northeastern.edu) .
+    Authors who wish to present their papers at the conference should submit electronically a three-page abstract (double-spaced, times new roman font, size 12) by Friday, **September 1st, 2017** to the conference co-Directors Dr. Jill Kickul, Professor of Clinical Entrepreneurship and Research Director, Brittingham Social Enterprise Lab at University of Southern California, and Dr. Sophie Bacq, Assistant Professor of Entrepreneurship & Innovation at Northeastern University at this address: <s.bacq@northeastern.edu> .
 
     Abstracts will be selected and authors will be notified and invited by __September 15th, 2017__. A full paper will be due on Friday __October 27th, 2017__.
 
     We hope to see you in Boston in November!
-date: '2017-05-16T14:11:58+00:00'
 left:
   title: Key Dates
   content: |-

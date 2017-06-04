@@ -1,5 +1,5 @@
 ---
-title: Location and Accomadations
+title: 2016 Location and Accomadations
 left-content: |
   X wow
 tabs:

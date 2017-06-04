@@ -1,5 +1,5 @@
 ---
-title: Location and Accomedations
+title: 2015 Location and Accomedations
 tabs:
 - title: Address
   content: "<div>embedded map</div>\n<div>\n  NYU Stern School of Business  \n  Kaufman
