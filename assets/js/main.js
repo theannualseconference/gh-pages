@@ -70,7 +70,7 @@ $(function() {
   if(hash && hashActive) scrollTo(hash);
 
   
-  $('[data-tab]').click(e => {
+  $('[data-tab]').click(function(e) {
     console.log(e)
     let id = loadTab(e.currentTarget);
     window.location.hash = '/' + id;
@@ -78,14 +78,14 @@ $(function() {
 
 
   /* Setting up the modal */
-  $('.modal').click((e) => {
+  $('.modal').click(function(e) {
     if (
       $('.modal').is(event.target) || 
       $('.close').is(event.target)
     ) $('.modal').css('display', 'none');
   })
 
-  $('.registration-link__open').click(() => {
+  $('.registration-link__open').click(function() {
     $('.modal').css('display', 'block');
   })
 
@@ -105,7 +105,7 @@ $(function() {
 
   // $('.tab-titles__speaker').scrollToFixed();
 
-  $('.tab-titles__speaker').toArray().forEach(el => {
+  $('.tab-titles__speaker').toArray().forEach(function (el) {
     var $el = $(el);
     var bottomMargin = $el.height() + 22;
     var $nextPanel = $el.parents('.panel').next();
@@ -114,7 +114,7 @@ $(function() {
       marginTop: 22, 
       // postFixed() { $(this).addClass('top-2'); },
 
-      limit: () => $nextPanel.offset().top - bottomMargin
+      limit: function () { return $nextPanel.offset().top - bottomMargin}
     });
 
 
