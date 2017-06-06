@@ -1,7 +1,7 @@
 <svg xmlns="http://www.w3.org/2000/svg" id="bg-globe" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" xml:space="preserve" width="47" height="58">
 
 <style type="text/css">
-	#bg-globe .st0{fill:#933939;} /* originally #c17577 */
+	#bg-globe .st0{fill:#9e4747;} /* originally #c17577, then #933939 */
 	#bg-globe .st1{clip-path:url(#SVGID_2_);}
 	#bg-globe .st2{clip-path:url(#SVGID_4_);fill: rgba(0,0,0,0.19);} /*#4B1212*/
 	#bg-globe .st3{fill: black;}
