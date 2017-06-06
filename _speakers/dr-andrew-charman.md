@@ -1,7 +1,7 @@
 ---
 layout: speakers
 name: Dr. Andrew Charman
-short_bio: Director, **The Sustainable Livelihoods Foundation**
+short_bio: "Director,  \nThe Sustainable Livelihoods Foundation"
 pic: "/uploads/Charman.jpeg"
 title: Dr. Andrew Charman
 date: '2017-05-16T14:54:05+00:00'

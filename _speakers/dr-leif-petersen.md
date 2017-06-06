@@ -1,7 +1,7 @@
 ---
 layout: speakers
 name: Dr. Leif Petersen
-short_bio: Managing Director, The Sustainable Livelihoods Foundation
+short_bio: "Managing Director,  \nThe Sustainable Livelihoods Foundation"
 pic: "/uploads/Leif-Petersen.jpg"
 title: Dr. Leif Petersen
 date: '2017-05-16T14:55:04+00:00'

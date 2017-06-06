@@ -9,7 +9,7 @@ speakers:
 - speaker_page: _speakers/dr-alex-nicholls.md
   name: Dr. Alex Nicholls
 - speaker_page: _speakers/dr-leif-petersen.md
-  name: Dr. Leif Peterson
+  name: Dr. Leif Petersen
 - speaker_page: _speakers/dr-tyler-wr.md
   name: Dr. Tyler Wry
 - name: Sponsors and Directors
