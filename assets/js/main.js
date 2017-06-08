@@ -48,20 +48,20 @@ function loadTab(el) {
   console.log($el, tabId)
 
   $el.addClass('active');
-  $(`#${tabId}`).addClass('active'); 
+  $('#'+tabId).addClass('active'); 
 
   return tabId;
 }
 
 function scrollTo(hash) {
   // $('html, body').animate({
-  //   scrollTop: $(`#${hash}`).offset().top
+  //   scrollTop: $("#"+hash).offset().top
   // }, 0);
 }
 
 $(function() {  
   let hash = location.hash.slice(2);
-  let hashActive = $(`[data-tab='${hash}']`)[0]
+  let hashActive = $("[data-tab='"+hash+"']")[0]
 
   // Load a tab from hash
   if(hash && hashActive) loadTab(hashActive);
