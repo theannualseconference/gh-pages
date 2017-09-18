@@ -7,6 +7,11 @@ layout: blank
   <title>The Annual SE Conference</title>
   <link rel="canonical" href="{{ site.data.settings.active_year }}">
   <meta http-equiv="refresh" content="0; url={{ site.data.settings.active_year }}">
+  <meta http-equiv="CACHE-CONTROL" content="NO-CACHE">
+  <meta http-equiv="EXPIRES" content="{{ site.time | date_to_rfc822 }}">
+
+
+
   <h1>Redirecting…</h1>
   <a href="{{ site.data.settings.active_year }}">Click here if you are not redirected.</a>
   <script>location="{{ site.data.settings.active_year }}"</script>
