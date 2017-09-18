@@ -41,7 +41,7 @@ sidebar-left:
 #### Hotel Accommodations
 
 Rooms for this conference are available:
-  - The Colonnade Hotel for $275/night (+ tax). Please make your reservation through [this link](https://gc.synxis.com/rez.aspx?Hotel=27205&Chain=10237&template=fBOSCO2&shell=fBOSCO2&arrive=11/1/2017&depart=11/5/2017&adult=1&child=0&group=NOR01A){:target="_blank"}.
+  - The Colonnade Hotel for $275/night (+ tax). Please make your reservation through [this link](https://gc.synxis.com/rez.aspx?Hotel=27205&Chain=10237&template=fBOSCO2&shell=fBOSCO2&arrive=11/1/2017&depart=11/5/2017&adult=1&child=0&group=SOE31A){:target="_blank"}.
   - The Sheraton Boston Hotel for $249/night (+ tax). Please make your reservation through [this link](https://www.starwoodmeeting.com/Book/SEC17){:target="_blank"}.
 
 #### Other Travel Accommodations
