@@ -4,7 +4,7 @@ name: Dr. Andrew Charman
 short_bio: "Director,  \nThe Sustainable Livelihoods Foundation"
 pic: "/uploads/Charman.jpeg"
 title: Dr. Andrew Charman
-date: '2017-05-16T14:54:05+00:00'
+date: 2017-05-16 14:54:05 +0000
 ---
 
 

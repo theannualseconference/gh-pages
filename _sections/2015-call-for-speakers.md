@@ -1,6 +1,6 @@
 ---
 title: 2015 Call For Speakers
-date: '2017-06-04T19:19:50.565+00:00'
+date: 2017-06-04 19:19:50 +0000
 ---
 Authors who wish to present their papers at the conference should submit electronically a three-page abstract (double-spaced, times new roman font, size 12) by __Tuesday September 1st, 2015__ to the conference co-Directors Dr. Jill Kickul and Dr. Sophie Bacq, Assistant Professor of Entrepreneurship & Innovation at Northeastern University at this address: jkickul@stern.nyu.edu.
 

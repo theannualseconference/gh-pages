@@ -5,7 +5,7 @@ short_bio: "Professor of Social Entrepreneurship  \nSaïd Business School  \nUni
   of Oxford"
 pic: "/uploads/Nicholls Alex.jpg"
 title: Dr. Alex Nicholls
-date: '2017-05-16T14:57:13+00:00'
+date: 2017-05-16 14:57:13 +0000
 ---
 Professor Alex Nicholls MBA is the first tenured professor in social entrepreneurship appointed at the University of Oxford and was the first staff member of the Skoll Centre for Social Entrepreneurship in 2004. His research interests range across several key areas within social entrepreneurship and social innovation, including: the nexus of relationships between accounting, accountability, and governance; public and social policy contexts; social investment; and Fair Trade.
 

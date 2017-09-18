@@ -5,7 +5,7 @@ short_bio: |-
   Associate Professor of Entrepreneurship
   Kelley School of Business
   Indiana University
-date: '2017-03-23T19:48:02.420+00:00'
+date: 2017-03-23 19:48:02 +0000
 ---
 Jeffery S. McMullen is Associate Professor of Entrepreneurship, Weimer Faculty Fellow, and Director of Social Entrepreneurship Programs for the Kelley School of Business at Indiana University.  Dr. McMullen earned his M.B.A. and Ph.D. in Strategic Management and Entrepreneurship at the University of Colorado, and his Bachelor of Accountancy at New Mexico State University.  
 

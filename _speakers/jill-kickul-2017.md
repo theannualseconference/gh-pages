@@ -6,7 +6,7 @@ short_bio: "Professor, Lloyd Greif Center for Entrepreneurial Studies  \nResea
   \ "
 pic: "/uploads/Jill_2.jpeg"
 title: Jill Kickul 2017
-date: '2017-05-16T15:20:27+00:00'
+date: 2017-05-16 15:20:27 +0000
 ---
 
 

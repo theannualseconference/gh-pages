@@ -1,6 +1,6 @@
 ---
 title: 2017 Speakers
-date: '2017-05-16T15:05:37+00:00'
+date: 2017-05-16 15:05:37 +0000
 speakers:
 - speaker_page: _speakers/dr-julie-battilana.md
   name: Dr. Julie Battilana

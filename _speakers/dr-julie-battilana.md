@@ -5,7 +5,7 @@ short_bio: "Professor of Business Administration, Harvard Business School  \nAla
   L. Gleitsman Professor of Social Innovation, Harvard Kennedy School  \nHarvard University"
 pic: "/uploads/battilana-julie.jpg"
 title: Dr. Julie Battilana
-date: '2017-05-16T14:50:53+00:00'
+date: 2017-05-16 14:50:53 +0000
 ---
 
 Julie Battilana is a Professor of Business Administration in the Organizational Behavior unit at Harvard Business School and the Alan L. Gleitsman Professor of Social Innovation at the Harvard Kennedy School. She currently teaches the second-year Power and Influence course and in previous years has taught the first-year Leadership and Organizational Behavior (LEAD) course in the MBA program. She also teaches in the doctoral program and in executive education offerings.

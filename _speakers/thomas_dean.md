@@ -5,7 +5,7 @@ short_bio: |-
   Professor, Management
   US Bank Faculty Fellow
   College of Business, Colorado State University, USA
-date: '2017-03-23T19:48:02.420+00:00'
+date: 2017-03-23 19:48:02 +0000
 ---
 Professor Dean studies, teaches, and consults in the areas of business strategy, entrepreneurship, and sustainable venturing.   Having authored some of the first articles and courses in environmental entrepreneurship, he is a pioneer in the field of entrepreneurship and sustainability.  He focuses his programmatic and conceptual efforts on understanding business strategies and economic opportunities present in emerging social and environmental trends.  He has published over 50 manuscripts on these topics including articles in journals such as the Academy of Management Journal, the Strategic Management Journal, and the Journal of Business Venturing.  He also authored a book entitled, “Sustainable Venturing: Entrepreneurial Opportunity in the Transition to a Sustainable Economy.”  He won the Dr. Alfred N. and Lynn Manos Page Prize for Sustainability Issues in Business Curricula, awarded by the University of South Carolina Moore School of Business.
 

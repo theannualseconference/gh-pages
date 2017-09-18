@@ -5,6 +5,6 @@ left-content: |
 tabs:
 - id: something_else
   page: _sections/2016-call-for-speakers.md
-date: '2017-05-16T18:01:00.590+00:00'
+date: 2017-05-16 18:01:00 +0000
 ---
 This is some text about stuff I suppose.

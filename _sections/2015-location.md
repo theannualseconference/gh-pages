@@ -34,7 +34,7 @@ tabs:
   content: When you arrive at the intersection of West 4th Street and Greene Street,
     you will be in front of Stern's Gould Plaza. Head to the Henry Kaufman Management
     Center, located at 44 West Fourth Street.
-date: '2017-05-16T18:01:00.590+00:00'
+date: 2017-05-16 18:01:00 +0000
 ---
 The 5th SE conference will be hosted in exciting New York City. Discounts on nearby hotels are available through the [NYU traveler program](http://www.nyu.edu/life/travel-and-transportation/nyu-traveler/discounts.html), but feel free to also use search engines such as Booking.com, Hotels.com, etc.
 

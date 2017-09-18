@@ -23,7 +23,7 @@ left:
       <dd class="ml0 b">Oct. 27, 2017</dd>
     </dl>
     <p class="f5">* earlier submission and acceptance notification possible</p>
-date: '2017-06-04T19:19:50.565+00:00'
+date: 2017-06-04 19:19:50 +0000
 ---
 Conceptual, qualitative and quantitative submissions are encouraged. Below are several research suggestions that may be interesting, although abstracts that address other relevant and timely themes of social entrepreneurship are also welcome:
 

@@ -3,7 +3,7 @@ name: Dr. Jill Kickul
 pic: "/images/notfound.png"
 short_bio: "Professor, Lloyd Greif Center for Entrepreneurial Studies \nResearch Director,
   Brittingham Social Enterprise Lab \nUniversity of Southern California"
-date: '2017-03-23T19:48:02.420+00:00'
+date: 2017-03-23 19:48:02 +0000
 ---
 Jill was formerly at New York University’s Stern School of Business as the Director of their Social Entrepreneurship Program and the Chair for the 30-course MBA specialization in Social Innovation and Impact. Prior to joining Stern, she was the Richard A. Forsythe Chair in Entrepreneurship in the Thomas C. Page Center for Entrepreneurship at Miami University and a professor in the management department in the University's Farmer School of Business. Prior to joining the Miami University faculty, she was the Elizabeth J. McCandless Professor in Entrepreneurship at the Simmons School of Management. 
 

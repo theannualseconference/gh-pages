@@ -3,7 +3,7 @@ name: Noah Isserman
 pic: "/uploads/Noah_Isserman.jpg"
 short_bio: "Assistant Professor of Business Administration and Social Work (visiting)
   \nUniversity of Illinois"
-date: '2017-03-23T19:48:02.420+00:00'
+date: 2017-03-23 19:48:02 +0000
 ---
 Noah is currently Assistant Professor of Business Administration and Social Work (visiting) at the University of Illinois, where he co-founded and directs the university wide Social Innovation at Illinois initiative and the award-winning iVenture Accelerator. He also serves on the four person core team tasked with design and rollout of the upcoming $48m Design Center. Noah was formerly at the University of Cambridge, where he was Gates Cambridge Scholar and member of Gonville and Caius College.
 

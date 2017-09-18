@@ -5,7 +5,7 @@ short_bio: |-
   Assistant Professor and Program Director
   Conscious Leadership and Social Innovation Program
   University of San Francisco, USA
-date: '2017-03-23T19:48:02.420+00:00'
+date: 2017-03-23 19:48:02 +0000
 ---
 Jennifer Walske, Assistant Professor and Program Director, Conscious Leadership and Social Innovation program, is a leading advocate for raising the social consciousness of global businesses. As a writer, researcher and entrepreneur, Dr. Walske promotes emergent social venture firms, with an emphasis on how human and social capital can strategically maximize new firm success.
 

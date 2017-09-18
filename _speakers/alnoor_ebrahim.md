@@ -4,7 +4,7 @@ short_bio: |
   Associate Professor of Business Administration
   Harvard Business School
 pic: "/images/notfound.png"
-date: '2017-03-23T19:48:02.420+00:00'
+date: 2017-03-23 19:48:02 +0000
 ---
 Alnoor Ebrahim is an Associate Professor at the Harvard Business School. His research and teaching focus on the challenges of performance management, accountability, and governance facing social sector organizations, impact investors, and their governing boards. He is author of the award-winning book, NGOs and Organizational Change: Discourse, Reporting, and Learning (Cambridge University Press 2005), and is co-editor of Global Accountabilities: Participation, Pluralism, and Public Ethics (Cambridge University Press, 2007). He holds a BSc degree from MIT (1991) in civil and environmental engineering, and a PhD from Stanford University (1999), where he studied environmental planning and management.
 
