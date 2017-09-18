@@ -1,26 +1,26 @@
 ---
 pages:
 - _speakers/sophie-bacq-2017.md
-- _speakers/dr-andrew-charman.md
-- _speakers/dr-tyler-wr.md
 - _speakers/jill-kickul-2017.md
-- _speakers/dr-alex-nicholls.md
-- _speakers/dr-leif-petersen.md
-- _speakers/dr-julie-battilana.md
+- _speakers/dr-tyler-wr.md
+- _speakers/dr-andrew-charman.md
+- _speakers/tom_lumpkin.md
 - _speakers/thomas_dean.md
 - _speakers/oana_branzei.md
-- _speakers/noah_isserman.md
-- _speakers/johanna_mair.md
-- _speakers/jennifer_walske.md
-- _speakers/jeffery_s_mcmullen.md
-- _speakers/tom_lumpkin.md
-- _speakers/sophie_bacq.md
 - _speakers/marya_besharov.md
 - _speakers/kumar_nair.md
 - _speakers/kai_hockerts.md
+- _speakers/johanna_mair.md
 - _speakers/jill_kickul.md
+- _speakers/jennifer_walske.md
 - _speakers/jeffrey_g_york.md
 - _speakers/alnoor_ebrahim.md
+- _speakers/dr-alex-nicholls.md
+- _speakers/dr-leif-petersen.md
+- _speakers/dr-julie-battilana.md
+- _speakers/noah_isserman.md
+- _speakers/jeffery_s_mcmullen.md
+- _speakers/sophie_bacq.md
 hide_body: false
 fields:
 - name: name
