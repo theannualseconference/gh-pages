@@ -1,0 +1,91 @@
+---
+pages:
+- _years/2016.md
+- _years/2015.md
+hide_body: false
+fields:
+- name: title
+  default: The 12th Annual <br/> Social Entrepreneurship <br/> Conference
+  label: Title
+  type: text
+  hidden: false
+- name: registration
+  default: false
+  label: Registration
+  type: boolean
+  hidden: false
+- name: call-for-speakers
+  default: true
+  label: Call for speakers
+  type: boolean
+  hidden: false
+- name: featured-image
+  default: "/uploads/boat.jpeg"
+  label: Featured image
+  type: text
+  hidden: false
+- name: main-color
+  default: "#57068c"
+  label: Main color
+  type: text
+  hidden: false
+- name: gradient-colors
+  default:
+  - rgba(87, 6, 140, 0.4)
+  - rgba(16, 11, 192, 0.4)
+  label: Gradient colors
+  type: list
+  hidden: false
+- name: sections
+  default: 
+  label: Sections
+  type: field_group_list
+  fields:
+  - name: title
+    type: text
+    label: Section Title
+  - name: section_page
+    type: select
+    config:
+      source:
+        type: pages
+        section: sections
+    label: Section Page
+  hidden: false
+  config:
+    labelField: title
+- name: speaker-section-index
+  default: 3
+  label: Speaker section index
+  type: text
+  hidden: false
+- name: speakers
+  default: 
+  label: Speakers
+  type: field_group_list
+  fields:
+  - name: speaker_name
+    type: text
+    label: Speaker Name
+  - name: speaker_page
+    type: select
+    label: Speaker Page
+    config:
+      source:
+        type: pages
+        section: speakers
+  hidden: false
+- name: layout
+  default: years
+  label: Layout
+  type: text
+  hidden: true
+  config:
+    source:
+      type: pages
+      section: speakers
+- name: date
+  default: 2017-03-23 00:00:00 +0000
+  label: Date
+  type: datetime
+  hidden: true

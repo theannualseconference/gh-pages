@@ -1,0 +1,25 @@
+---
+pages:
+- _sections/2017-directors.md
+- _sections/2017-speakers.md
+hide_body: false
+fields:
+- type: text
+  label: Title
+  name: title
+- type: field_group_list
+  label: Speakers
+  name: speakers
+  fields:
+  - name: name
+    type: text
+    label: Name
+  - name: speaker_page
+    type: select
+    label: Speaker page
+    config:
+      source:
+        type: pages
+        section: speakers
+  config:
+    labelField: name

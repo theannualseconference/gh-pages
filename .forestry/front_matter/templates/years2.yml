@@ -1,0 +1,107 @@
+---
+pages:
+- _years2/2017.md
+hide_body: false
+fields:
+- name: date
+  label: Date
+  type: datetime
+  hidden: true
+  default: ''
+- name: title
+  label: Title
+  type: text
+  hidden: false
+  default: The Annual SE Conference 201X
+- name: featured-image
+  label: Featured image
+  type: file
+  hidden: false
+  default: ''
+- name: main-color
+  label: Main color
+  type: text
+  hidden: false
+  default: "#444"
+- name: gradient-colors
+  label: Gradient colors
+  type: list
+  hidden: false
+  default: []
+- name: panels
+  label: Panels
+  type: field_group_list
+  fields:
+  - name: id
+    label: Id
+    type: text
+    hidden: false
+    default: ''
+  - name: background
+    label: Background
+    type: text
+    hidden: false
+    default: ''
+  - name: sections
+    label: Sections
+    type: field_group_list
+    fields:
+    - name: title
+      label: Title
+      type: text
+      hidden: false
+      default: ''
+    - name: section_page
+      label: Section page
+      type: select
+      hidden: false
+      default: ''
+      config:
+        source:
+          type: pages
+          section: sections
+    hidden: false
+    default: ''
+  hidden: false
+  default: []
+- name: registration
+  label: Registration
+  type: text
+  hidden: false
+  default: coming soon
+- name: registrationOptions
+  label: Registration Options
+  type: field_group_list
+  fields:
+  - name: target
+    label: Target
+    type: text
+    hidden: false
+    default: ''
+  - name: price
+    label: Price
+    type: text
+    hidden: false
+    default: ''
+  - name: link
+    label: Link
+    type: text
+    hidden: false
+    default: ''
+  - name: sold_out
+    type: boolean
+    label: Sold Out
+  hidden: false
+  default: []
+  config:
+    labelField: target
+- name: layout
+  label: Layout
+  type: text
+  hidden: true
+  default: years2
+- name: past
+  label: Past
+  type: boolean
+  hidden: false
+  default: false

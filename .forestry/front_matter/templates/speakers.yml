@@ -1,0 +1,47 @@
+---
+pages:
+- _speakers/sophie-bacq-2017.md
+- _speakers/dr-andrew-charman.md
+- _speakers/dr-tyler-wr.md
+- _speakers/jill-kickul-2017.md
+- _speakers/dr-alex-nicholls.md
+- _speakers/dr-leif-petersen.md
+- _speakers/dr-julie-battilana.md
+- _speakers/thomas_dean.md
+- _speakers/oana_branzei.md
+- _speakers/noah_isserman.md
+- _speakers/johanna_mair.md
+- _speakers/jennifer_walske.md
+- _speakers/jeffery_s_mcmullen.md
+- _speakers/tom_lumpkin.md
+- _speakers/sophie_bacq.md
+- _speakers/marya_besharov.md
+- _speakers/kumar_nair.md
+- _speakers/kai_hockerts.md
+- _speakers/jill_kickul.md
+- _speakers/jeffrey_g_york.md
+- _speakers/alnoor_ebrahim.md
+hide_body: false
+fields:
+- name: name
+  default: Dr. Alnoor Ebrahim
+  label: Name
+  type: text
+  hidden: false
+- name: short_bio
+  default: |
+    Associate Professor of Business Administration
+    Harvard Business School
+  label: Short bio
+  type: textarea
+  hidden: false
+- name: pic
+  default: "/images/notfound.png"
+  label: Pic
+  type: file
+  hidden: false
+- name: layout
+  default: speakers
+  label: Layout
+  type: text
+  hidden: true

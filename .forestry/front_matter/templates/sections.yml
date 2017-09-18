@@ -1,0 +1,55 @@
+---
+pages:
+- _sections/2017-location.md
+- _sections/2015-conference-themes.md
+- _sections/2015-location.md
+- _sections/2017-call-for-speakers.md
+- _sections/2016-registration.md
+- _sections/2016-program.md
+- _sections/2016-location.md
+- _sections/2016-call-for-speakers.md
+- _sections/2015-submission.md
+- _sections/2015-registration.md
+- _sections/2015-call-for-speakers.md
+hide_body: false
+fields:
+- name: layout
+  default: sections
+  label: Layout
+  type: text
+  hidden: true
+- name: title
+  default: Section Title
+  label: Title
+  type: text
+  hidden: false
+- name: background
+  default: ''
+  label: Background
+  type: text
+  hidden: false
+- name: tabs
+  default: []
+  label: Tabs
+  type: field_group_list
+  fields:
+  - name: tab-title
+    type: text
+    label: Tab Title
+  - name: tab-content
+    type: textarea
+    label: Tab Content
+  hidden: false
+- name: sidebar-left
+  type: field_group
+  label: Sidebar Left
+  fields:
+  - name: enabled
+    type: boolean
+    label: Enabled
+  - name: title
+    type: text
+    label: Title
+  - name: content
+    type: textarea
+    label: Content

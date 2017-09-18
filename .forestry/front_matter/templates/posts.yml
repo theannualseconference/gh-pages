@@ -1,0 +1,23 @@
+---
+hide_body: false
+fields:
+- name: layout
+  default: post
+  label: Layout
+  type: text
+  hidden: false
+- name: categories
+  default: ''
+  label: Categories
+  type: text
+  hidden: false
+- name: tags
+  default: []
+  label: Tags
+  type: tag_list
+  hidden: false
+- name: featured-image
+  default: ''
+  label: Featured image
+  type: text
+  hidden: false

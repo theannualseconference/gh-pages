@@ -1,0 +1,69 @@
+---
+pages:
+- index.html
+- archive.html
+hide_body: false
+fields:
+- name: title
+  default: All Years
+  label: Title
+  type: text
+  hidden: false
+- name: layout
+  default: page
+  label: Layout
+  type: text
+  hidden: false
+- name: active_year
+  default: 2016
+  label: Active year
+  type: text
+  hidden: false
+- name: featured-image
+  default: "/images/pic13.jpg"
+  label: Featured image
+  type: text
+  hidden: false
+- name: primary_description
+  default: This is a demo portfolio site.
+  label: Primary description
+  type: text
+  hidden: false
+- name: secondary_description
+  default: Etiam quis viverra lorem, in semper lorem. Sed nisl arcu euismod sit amet
+    nisi euismod sed cursus arcu elementum ipsum arcu vivamus quis venenatis lorem
+    ipsum et magna feugiat veroeros aliquam. Lorem ipsum dolor sit amet nullam dolore.
+  label: Secondary description
+  type: textarea
+  hidden: false
+- name: date
+  default: 2017-03-23 13:06:26 +0000
+  label: Date
+  type: datetime
+  hidden: false
+- name: speakers
+  default:
+  - description: He's alright
+    bio: 'A man of many talents, Bob Bobson is best known for his hit book "Being
+      Bob Bobson: A Bob Bobson Story"'
+    name: Bob Bobson
+  label: Speakers
+  type: field_group_list
+  fields:
+  - name: description
+    default: He's alright
+    label: Description
+    type: text
+    hidden: false
+  - name: bio
+    default: 'A man of many talents, Bob Bobson is best known for his hit book "Being
+      Bob Bobson: A Bob Bobson Story"'
+    label: Bio
+    type: textarea
+    hidden: false
+  - name: name
+    default: Bob Bobson
+    label: Name
+    type: text
+    hidden: false
+  hidden: false
