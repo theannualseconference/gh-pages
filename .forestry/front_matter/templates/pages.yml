@@ -1,8 +1,7 @@
 ---
-pages:
-- index.html
-- archive.html
+label: Pages
 hide_body: false
+is_partial: false
 fields:
 - name: title
   default: All Years
@@ -67,3 +66,6 @@ fields:
     type: text
     hidden: false
   hidden: false
+pages:
+- index.html
+- archive.html

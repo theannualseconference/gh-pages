@@ -1,7 +1,7 @@
 ---
-pages:
-- _years2/2017.md
+label: Years2
 hide_body: false
+is_partial: false
 fields:
 - name: date
   label: Date
@@ -105,3 +105,5 @@ fields:
   type: boolean
   hidden: false
   default: false
+pages:
+- _years2/2017.md

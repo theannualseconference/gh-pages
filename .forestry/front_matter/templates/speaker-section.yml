@@ -1,8 +1,7 @@
 ---
-pages:
-- _sections/2017-directors.md
-- _sections/2017-speakers.md
+label: Speaker Section
 hide_body: false
+is_partial: false
 fields:
 - type: text
   label: Title
@@ -23,3 +22,6 @@ fields:
         section: speakers
   config:
     labelField: name
+pages:
+- _sections/2017-speakers.md
+- _sections/2017-directors.md

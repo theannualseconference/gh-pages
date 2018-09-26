@@ -1,8 +1,7 @@
 ---
-pages:
-- _years/2016.md
-- _years/2015.md
+label: Years
 hide_body: false
+is_partial: false
 fields:
 - name: title
   default: The 12th Annual <br/> Social Entrepreneurship <br/> Conference
@@ -89,3 +88,6 @@ fields:
   label: Date
   type: datetime
   hidden: true
+pages:
+- _years/2016.md
+- _years/2015.md
