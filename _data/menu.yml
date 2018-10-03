@@ -8,6 +8,3 @@
 - title: 'About '
   url: "/about.html"
   priority: 3
-- title: Blog
-  url: "/blog.html"
-  priority: 4
