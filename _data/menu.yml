@@ -5,8 +5,8 @@
 - title: Speakers
   url: "/speakers.html"
   priority: 2
-- title: Generic Page
-  url: "/generic.html"
+- title: 'About '
+  url: "/about.html"
   priority: 3
 - title: Blog
   url: "/blog.html"
