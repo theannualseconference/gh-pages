@@ -3,7 +3,7 @@
   url: "/"
   priority: 1
 - title: Speakers
-  url: "/speakers.html"
+  url: https://app.forestry.io/sites/uipmse54uwwneg/#/sections/speakers/
   priority: 2
 - title: 'About '
   url: "/about.html"
