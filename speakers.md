@@ -7,6 +7,5 @@ short_bio: |
 pic: "/images/notfound.png"
 title: Speakers
 date: 2018-10-10 12:59:56 -0400
-published: false
 
 ---
