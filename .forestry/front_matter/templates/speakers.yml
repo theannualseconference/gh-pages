@@ -26,6 +26,7 @@ fields:
   type: text
   hidden: true
 pages:
+- speakers.md
 - _speakers/johanna_mair.md
 - _speakers/noah_isserman.md
 - _speakers/dr-julie-battilana.md
