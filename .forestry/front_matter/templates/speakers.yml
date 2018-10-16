@@ -26,6 +26,7 @@ fields:
   type: text
   hidden: true
 pages:
+- _speakers/jill-kickul-2017.md
 - speakers.md
 - _speakers/johanna_mair.md
 - _speakers/noah_isserman.md
@@ -33,7 +34,6 @@ pages:
 - _speakers/alnoor_ebrahim.md
 - _speakers/jennifer_walske.md
 - _speakers/dr-andrew-charman.md
-- _speakers/jill-kickul-2017.md
 - _speakers/sophie_bacq.md
 - _speakers/oana_branzei.md
 - _speakers/jill_kickul.md
