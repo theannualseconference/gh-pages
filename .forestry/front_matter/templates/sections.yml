@@ -44,14 +44,14 @@ fields:
     type: textarea
     label: Content
 pages:
+- _sections/2015-submission.md
+- _sections/2015-call-for-speakers.md
+- _sections/2017-call-for-speakers.md
 - _sections/2015-registration.md
 - _sections/2016-registration.md
-- _sections/2017-call-for-speakers.md
 - _sections/2016-call-for-speakers.md
 - _sections/2016-location.md
-- _sections/2015-call-for-speakers.md
 - _sections/2015-conference-themes.md
 - _sections/2017-location.md
 - _sections/2015-location.md
 - _sections/2016-program.md
-- _sections/2015-submission.md

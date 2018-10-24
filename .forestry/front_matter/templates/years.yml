@@ -89,5 +89,5 @@ fields:
   type: datetime
   hidden: true
 pages:
-- _years/2016.md
 - _years/2015.md
+- _years/2016.md
