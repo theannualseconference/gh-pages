@@ -1,5 +1,5 @@
 ---
-label: Years
+label: Prev Years
 hide_body: false
 is_partial: false
 fields:
@@ -89,5 +89,5 @@ fields:
   type: datetime
   hidden: true
 pages:
-- _years/2015.md
-- _years/2016.md
+- _prev_years/2016.md
+- _prev_years/2015.md
