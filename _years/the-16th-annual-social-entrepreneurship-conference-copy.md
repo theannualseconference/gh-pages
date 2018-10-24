@@ -5,9 +5,7 @@ featured-image: "/uploads/background-2016.jpg"
 main-color: "#57068c"
 conference_date: November 2-3, 2018
 conference_location: Northeastern University, Boston
-colors:
-- rgba(87, 6, 140, 0.4)
-- rgba(16, 11, 192, 0.4)
+colors: []
 panels:
 - id: call-for-speakers
   class: bg-globe
