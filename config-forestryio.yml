@@ -62,9 +62,9 @@ defaults:
     featured-image: ''
 - scope:
     path: ''
-    type: years
+    type: prev_years
   values:
-    layout: years
+    layout: prev_years
     title: The Annual SE Conference 201X
     registration: false
     call-for-speakers: true
@@ -76,9 +76,9 @@ defaults:
     speaker-section-index: 0
 - scope:
     path: ''
-    type: years2
+    type: years
   values:
-    layout: years2
+    layout: years
     featured-image: ''
     title: The Annual SE Conference 201X
     registration: coming soon
