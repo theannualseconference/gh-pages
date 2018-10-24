@@ -3,8 +3,8 @@
 ---
 @charset "utf-8";
 @import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,700,900');
-@import "tachyons";
-@import "tachyons_debug";
+@import "./tachyons";
+@import "./tachyons_debug";
 
 html, body { margin: 0; height: 100%; }
 // * { box-sizing: border-box; }
@@ -290,6 +290,3 @@ sidebar {
     flex-direction: column;
   }
 }
-
-
-
