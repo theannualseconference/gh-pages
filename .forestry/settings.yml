@@ -4,32 +4,37 @@ auto_deploy: true
 admin_path: ''
 webhook_url: 
 sections:
+- type: directory
+  path: _sections
+  label: Sections
+  create: all
+  match: "**/*"
+- type: directory
+  path: _years2
+  label: Years2
+  create: all
+  match: "**/*"
+- type: jekyll-pages
+  label: Pages
+  create: all
 - type: jekyll-posts
   label: Posts
   create: all
-- type: directory
-  path: _years
-  label: Years
-  create: all
-  match: "**/*"
 - type: directory
   path: _speakers
   label: Speakers
   create: all
   match: "**/*"
 - type: directory
-  path: _sections
-  label: Sections
+  path: _years
+  label: Years
   create: all
   match: "**/*"
-- type: jekyll-pages
-  label: Pages
-  create: all
 - type: directory
-  path: _years2
-  label: Years2
-  create: all
-  match: "**/*"
+  path: _data
+  label: Data
+  create: none
+  match: "**/*.{json,yaml,yml}"
 upload_dir: uploads
 public_path: "/uploads"
 front_matter_path: "/uploads"
