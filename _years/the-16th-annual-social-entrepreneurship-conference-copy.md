@@ -1,9 +1,9 @@
 ---
-date: 2017-03-23 00:00:00 +0000
-title: The 16th Annual Social Entrepreneurship Conference-(copy)
+date: 2017-03-22 20:00:00 -0400
+title: The 15th Annual Social Entrepreneurship Conference
 featured-image: "/uploads/background-2016.jpg"
 main-color: "#57068c"
-conference_date: November 2-3, 2017
+conference_date: November 2-3, 2018
 conference_location: Northeastern University, Boston
 colors:
 - rgba(87, 6, 140, 0.4)
