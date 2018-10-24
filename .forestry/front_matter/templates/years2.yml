@@ -105,5 +105,3 @@ fields:
   type: boolean
   hidden: false
   default: false
-pages:
-- _years2/2017.md
