@@ -1,8 +1,7 @@
 <!DOCTYPE html>
 <html>
 {% include head.html %}
-  <body class="nunito">
-    
+  <body class="nunito debug- cover" style="background:url({{ site.baseurl }}{{ page.featured-image }}) no-repeat center fixed;">
     
     <!-- Custom page style -->
     {% capture linear-gradient %}
@@ -18,6 +17,12 @@
         .hover-color-{{forloop.index0}}:hover { color: {{c}} !important; }
       {% endfor %}
 
+      .bg-gradient {
+        background-image: linear-gradient(
+          45deg, 
+          {{linear-gradient}}
+        );
+      }
       .b--gradient {
         border-image-source: linear-gradient(
           45deg, 
@@ -29,10 +34,10 @@
       .cover__interior--overlay {
           z-index: 0;
           opacity: {{page.filter-opacity}};
-          background-image: linear-gradient(
+         /* background-image: linear-gradient(
             45deg, 
             {{linear-gradient}}
-          );
+          ); */
         }
 
         .img-container::after {
@@ -42,77 +47,102 @@
           );
         }
     </style>
-    
-    <!-- Main Image -->
-    <section class="cover__exterior w-100 white-90 cover" style="background:url({{ site.baseurl }}{{ page.featured-image }}) no-repeat center;">
 
-      <div class="cover__interior cover__interior--overlay"></div>
-      <div class="cover__interior dt tc">
-        <div class="dtc v-mid pv4">
-          <h1 class="f1 fw1 white-90" style="margin: auto; max-width: 14em;">
-            {{ page.title }}
-        
-          </h1>
-          <div class="ph0 mh0 measure f2 lh-copy center ">
-            <span>{{page.conf_date}}</span> • <span>{{page.location}}</span>
-          </div>
-          <div class="f4 fw2 flex tc items-center flex-wrap justify-center">
-            <a class="ba bw2 pointer link ttu br1 hover-bg-white-30 dib ph5 pv3 mh3"> Call for Papers </a>
-            <a class="ba bw2 pointer link ttu br1 hover-bg-white-30 dib ph5 pv3 mh3"> Register Now</a>
-          </div>
-        </div>
-      </div> 
-    </section>
-    <nav class="bt bb bg-0 tc pv1 center mt0 w-100">
-      {% for navitem in page.menu %}
+    <!-- Nav -->
+<!--     <nav class="bt bb bg-0 tc pv1 center mt0 w-100">
+      {% for navitem in site.data.menu %}
       
         <a href="{{ navitem.url | prepend: site.baseurl }}"
           class="f6 link ttu black-90 ba b--transparent hover-b--inherit dib pa3 ph4-l"   
         > {{ navitem.title }} </a>
         
       {% endfor %}
-    </nav>
+    </nav> -->
+
+    <!-- Main Image -->
+    <section id="intro" class="cover__exterior w-100 white-90 " >
+
+      <div class="cover__interior cover__interior--overlay"></div>
+      <div class="cover__interior dt tc">
+        <div class="flex flex-column justify-between pv4">
+          <div class="logo-container">
+            {% include logo.html  color="#FFF" %}
+          </div>
+<!-- 
+          <h1 class="f1 fw1 white-90" style="margin: auto; max-width: 14em;">
+            {{ page.title }}
+          </h1> -->
 
 
-    <!-- Content -->
-    <section class="">
-      <div class="center measure-wide pv5 f3">
-        <h1 class="fw3 pb2 f1 tc">About The Conference</h1>
-        <div class="lh-copy fw3 f4-ns black-70">
-          {{ content }} 
+          <div class="ph0 mb5 measure intro-shadow f2 lh-copy center ">
+            <div>{{page.conference_date}}</div> 
+            <div>{{page.conference_location}}</div>
+          </div>
+          <div class="f4 mb2 fw2 flex tc items-center flex-wrap justify-center">
+            {% if page.registration == "open" %} 
+              <a class="registration-link__open ba white intro-box-shadow bw2 pointer link ttu br1 hover-bg-white-30 dib ph5 pv3 mh3"> 
+                Register Now
+              </a>
+            {% elsif page.registration == 'closed' %} 
+              <div class="ba bw2 pointer  intro-box-shadow link ttu br1 dib ph5 pv3 mh3"> 
+                Registration Closed
+              </div>
+            {% else %}
+              <div class="ba bw2 pointer  intro-box-shadow link ttu br1 dib ph5 pv3 mh3"> 
+                Registration Coming Soon
+              </div>
+            {% endif %}
+          </div>
         </div>
-      </div>
+      </div> 
     </section>
 
-    {% for section in page.sections %}
-
-      <!--  Speakers -->
-      {% if forloop.index0 == page.speaker-section-index %}
-      <section id="speakers" class="speakers">
-        <div class="center measure-wide pt4 f3">
-          <h1 class="fw3 pb2 f1 tc">Speakers</h1>
-        </div>
-        <div class="speaker-container-container pb4">
-          {% for speaker in page.speakers %}
-            {% include import-speaker.html page=speaker.page pic=true id=speaker.id active=forloop.first %}
-          {% endfor %}
-        </div>
-        <div>
-          {% for speaker in page.speakers %}
-            {% include import-speaker.html page=speaker.page bio=true id=speaker.id active=forloop.first %}
-          {% endfor %}
-        </div>
-      </section>
-      {% endif %}
-
-      <!-- Sections -->
-      <section id="{{section.id}}" class="bt bw3 b--gradient">
-        {% include import-section.html page=section.page %}
-      </section>
+    <!-- Content -->
+    {% for panel in page.panels %}
+      <div id="panel-{{panel.id}}"  class="panel {{panel.class}}" style="background: {{ panel.background }};">
+        {% if forloop.first %}
+          <section class="section-container">
+            <div class="section-title">About The Conference</div>
+            <div class="section-content">
+              {{ content }} 
+            </div>
+          </section>
+        {% endif %}
+        {% for section in panel.sections %}
+          {% include import-section2.html page=section.section_page title=section.title %}
+        {% endfor %}
+      </div>
     {% endfor %}
 
 
-
     {% include footer.html %}
+
+    <div id="myModal" class="modal">
+      <div class="modal-content cf br2">
+        <span class="close fr m2 black-90 pointer mh2">&times;</span>
+        <div class="reg-links flex justify-center mv3">
+         {% for reg in page.registrationOptions %}
+
+          <div class="bw1 mh2 ba b--dashe hover-b--darkblue b--black-20 flex flex-column items-center justify-between no-underline ph3 br2 mh0 w-100 w-25-ns mb3 darkblue">
+            <div class="link darkblue flex flex-column justify-between" style="flex-grow: 1;">
+              <h3 class="f2 fw4 mt2 mt3-ns mb2 black-50 hover-darkblue">{{ reg.target }}</h3>
+              <h2 class="fw5 f1 mv4">
+                <sup class="pr0 f4">$</sup> 
+                {{reg.price}}
+              </h2>
+            </div>
+
+            <a class="link f3 fw3 pv3 ph4 br2 fw5 bb bw1 link pointer mt2 mb4 dib bg-dark-red dim white " href="{{ reg.link }}" target="_blank">
+              Register Now
+            </a>
+          </div>
+
+          {% endfor %}
+        </div>
+      </div>
+
+    </div>
+
+
   </body>
 </html>
