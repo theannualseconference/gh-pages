@@ -10,8 +10,8 @@ sections:
   create: all
   match: "**/*"
 - type: directory
-  path: _years2
-  label: Years2
+  path: _years
+  label: Years
   create: all
   match: "**/*"
 - type: jekyll-pages
@@ -26,8 +26,8 @@ sections:
   create: all
   match: "**/*"
 - type: directory
-  path: _years
-  label: Years
+  path: _prev_years
+  label: Prev Years
   create: all
   match: "**/*"
 - type: directory
