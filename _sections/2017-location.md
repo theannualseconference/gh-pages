@@ -36,7 +36,8 @@ tabs:
     -   Take the MBTA Green Line (E train) to the Northeastern University stop, cross Huntington Avenue, enter Northeastern's campus. Egan Research Center is #60 on the campus map.
     -   Take the MBTA Orange Line to the Ruggles T Station, enter into Northeastern University campus on Forsyth Street. Egan Research Center is #60 on the campus map.
   title: How to get here
-title: 2017 Location
+title: 2018 Location
+
 ---
 #### Hotel Accommodations
 
