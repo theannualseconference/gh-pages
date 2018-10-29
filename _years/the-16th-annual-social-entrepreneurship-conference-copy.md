@@ -4,7 +4,7 @@ title: The 15th Annual Social Entrepreneurship Conference
 featured-image: "/uploads/background-2016.jpg"
 main-color: "#57068c"
 conference_date: November 2-3, 2018
-conference_location: Northeastern University, Boston
+conference_location: University of Southern California, Los Angeles
 colors: []
 panels:
 - id: call-for-speakers
