@@ -1,10 +1,10 @@
 ---
-date: 2017-03-23 00:00:00 +0000
+date: 2019-11-08 20:00:00 -0500
 title: The 16th Annual Social Entrepreneurship Conference
 featured-image: "/uploads/background-2016.jpg"
 main-color: "#57068c"
-conference_date: November 2-3, 2018
-conference_location: 'University of Southern California, Los Angeles '
+conference_date: November 8-9, 2019
+conference_location: Indiana University, Bloomington, Indiana
 colors:
 - rgba(87, 6, 140, 0.4)
 - rgba(16, 11, 192, 0.4)
