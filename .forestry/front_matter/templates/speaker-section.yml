@@ -23,5 +23,5 @@ fields:
   config:
     labelField: name
 pages:
-- _sections/2017-speakers.md
 - _sections/2017-directors.md
+- _sections/2017-speakers.md
